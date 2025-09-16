@@ -5,7 +5,7 @@ public class Menu : MonoBehaviour
 {
     public GameObject PanelConfig;
 
-    public void AbrirConfig()
+    public void AbrirConfig() 
     {
         if (PanelConfig != null)
         {
