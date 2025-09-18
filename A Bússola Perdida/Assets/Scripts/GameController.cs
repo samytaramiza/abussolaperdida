@@ -88,17 +88,7 @@ public class GameController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
-        {
-            vida = Mathf.Clamp(vida - 10f, 0f, 100f);
-            barra.GerenciarVida(vida);
-        }
-
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            vida = Mathf.Clamp(vida + 10f, 0f, 100f);
-            barra.GerenciarVida(vida);
-        }
+        
     }
 
 }
