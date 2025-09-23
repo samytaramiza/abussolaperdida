@@ -6143,7 +6143,6 @@ GameObject:
   - component: {fileID: 422636750}
   - component: {fileID: 422636749}
   - component: {fileID: 422636747}
-  - component: {fileID: 422636751}
   m_Layer: 8
   m_Name: Square
   m_TagString: Untagged
@@ -6267,25 +6266,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!253 &422636751
-BuoyancyEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 422636746}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_SurfaceLevel: 0
-  m_Density: 500
-  m_LinearDrag: 5
-  m_AngularDrag: 5
-  m_FlowAngle: 0
-  m_FlowMagnitude: 0
-  m_FlowVariation: 0
 --- !u!1 &500022140
 GameObject:
   m_ObjectHideFlags: 0
@@ -6820,8 +6800,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ee05984b68efff50c99e4813a956b5d8, type: 3}
-  m_Resource: {fileID: 8300000, guid: ee05984b68efff50c99e4813a956b5d8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e21132e60e5c911a8884076db8598a57, type: 3}
+  m_Resource: {fileID: 8300000, guid: e21132e60e5c911a8884076db8598a57, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
