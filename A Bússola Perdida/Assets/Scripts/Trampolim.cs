@@ -1,8 +1,11 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class Trampolim : MonoBehaviour
 {
-    [SerializeField] private float Mutiplier;
+    /*[SerializeField] private float multiplier;
 
     //private Animator anim;
     private Player _player;
@@ -14,7 +17,7 @@ public class Trampolim : MonoBehaviour
 
     public void PlayerJump()
     {
-        _player.JumpFromTrampoline(Multiplier);
+        _player.JumpFromTrampoline(multiplier);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -30,7 +33,7 @@ public class Trampolim : MonoBehaviour
     {
         if (collision.transform.CompareTag("Player"))
         {
-            player = null;
+            _player = null;
         }
-    }
+    }*/
 }
