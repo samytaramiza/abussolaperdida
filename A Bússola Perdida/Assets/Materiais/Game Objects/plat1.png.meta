@@ -104,9 +104,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1000
-        height: 1010
+        y: 946
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -117,6 +117,4868 @@ TextureImporter:
       bones: []
       spriteID: 20acb9d735ef2d7e0800000000000000
       internalID: -1742050471295858174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 946
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82ebffeb9f017784ab651925e7fcf33e
+      internalID: -1646132571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 946
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc32270a0ef12705295bc8882cfd5d59
+      internalID: 1912787667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 946
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceaf884a28c75c46da5780981808812b
+      internalID: 1000107342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 946
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b354a15e641ace178fa5a4da912fc2a
+      internalID: 986463131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 946
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ff581deb8e2af9a91b686616f8e9db
+      internalID: -987333799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 946
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e39134c49c67bc999bd289a78c181d
+      internalID: -998396746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 946
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b946eb5c27d7a6209343b3d4038eac0
+      internalID: 1498985553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_8
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 946
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8cc6563fd6a6d7d8a08843bb9164c4
+      internalID: 505294240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_9
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 946
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61adf6f4df324416ab19ce51df9db196
+      internalID: 1702768356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_10
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 946
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a10598568a9e881cadba99631559fed
+      internalID: 273970355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_11
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 946
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77c19e218237a244a29e6ef7f11b2ae
+      internalID: -338933663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_12
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 946
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9912a4d09996136b4da1bbb4ecc090
+      internalID: 954410242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_13
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 946
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19824af49917872348aacaf5ce94db03
+      internalID: -499916324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_14
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 946
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf033e5c29463fa48c26f59ff5eedf4
+      internalID: -1246575851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19ef5598eb9b73490b53180b24fc8c80
+      internalID: 1746400521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb91f4e228fac9704b6390eb82c45f0f
+      internalID: 916397362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3792126aa8263244ca64e63b5a8c0a9e
+      internalID: -1046801100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_18
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35e056647230d091c8f7598db916f973
+      internalID: 673323447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_19
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da6e6e95d82c3882e83bb9b5f1294c79
+      internalID: 1527755565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_20
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cdd979fccff8dfcab42f5944e318baf
+      internalID: 227339038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_21
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a86681dca76c635c2905cf57afa41ef4
+      internalID: -1841331976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_22
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab953c14ee245b23aacfa55a124c9a0e
+      internalID: -876562257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_23
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f5cfbb4a8d6c32a9dc90156538f2ff
+      internalID: -889173629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_24
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dff276a1401463baae7e1cac4d68af2
+      internalID: 33496328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_25
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03851e169e706d8ebaa4d2d5af7a7eb
+      internalID: -353206772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_26
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e85cc0c45dfd283be1925f4a0d3c89
+      internalID: 1595776099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_27
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc9258bd2b4b54c39b083970a2b8fff
+      internalID: 1579251180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_28
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de57063df8e4c7dc0a2a3a476e374fe4
+      internalID: -596952592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_29
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 882
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8abee9ca58cc1b7918518d0f2b3953
+      internalID: -394933577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261fdf6f4fbe9c323a9c2a755d5fe0ff
+      internalID: 1099094084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_31
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd7166e4ccbb9a85a1973bcb457f134
+      internalID: 1485033445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_32
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a543e7eadc0c459fbbcd99e8e4554963
+      internalID: 1390877830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_33
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b6719656c9a163990e42676f5fe82e
+      internalID: -1478681804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_34
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efcd2103d279902dd938e7381c7fac61
+      internalID: 746061291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_35
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acc2990bb0577be2bad76a951adf3981
+      internalID: -984257369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50d751161034f94fc933ebe9f9ba7491
+      internalID: -2032050637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_37
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e00073d3c6d9fdd3b830b2b9266f869
+      internalID: 1551797382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_38
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b3ba5cf92a7f6d29d61b5e3e1e2e80
+      internalID: -1467565651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_39
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd19c049f9a348ff08301319cf503ce8
+      internalID: -2009344388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_40
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfd1be7d324f30a9ba7909b1c4637f2
+      internalID: -1291828409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_41
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f24fcfd89ddbb584a1a7977b369673c
+      internalID: -1114194759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_42
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 154ab066512e70d3098f157ffcf61e08
+      internalID: 1501198551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_43
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa73fbbf8036e9bb9ccd01c26c591a4
+      internalID: -175055260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_44
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 818
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5897f1a610e55f2e09f333d4850894dc
+      internalID: -513525304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52b1b0c53f3464414933f50c70025914
+      internalID: -352308255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_46
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 329c34543a34c33638b12ca540d9fb2b
+      internalID: -1041239889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_47
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a05ee9e4673e486da12c1227dfc50c6
+      internalID: 554417903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_48
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea1f5f7f32d091ee48c4fcd2d9546ff6
+      internalID: 1001718508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_49
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41b6d73082d08118971c7647a86b7b9
+      internalID: 354802947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_50
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556f5a9133336ae08a326c8a78858b8e
+      internalID: -615166931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_51
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c099ed0d38991e8a12dd874123b825
+      internalID: 886112507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_52
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a011064455d9ac965a32988f275b993f
+      internalID: 424632580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_53
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a420537bcc1082a87ad8f0b315d93050
+      internalID: -393761780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_54
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e8eb3a130ca7d0db8764f79179840e8
+      internalID: 1562117664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_55
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f44dbb483e4766208fb9921323fc78b
+      internalID: -201606653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_56
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05af7491ec16d45089fb3fade4aa9458
+      internalID: 338937352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_57
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc55af3ad6317ddc0b87d9a87b8ae424
+      internalID: -1564756093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_58
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09cb633578f25647b65d672d7941501
+      internalID: -1819012627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_59
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 754
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1df1d764f1f5ca4983ec1e1ff9e4b7
+      internalID: -1177347997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980dc58fbe54daca2b6c33c32976d833
+      internalID: -386478922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_61
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f12b4d2dabbf0be8a4f9a9483bb0411
+      internalID: 1496266703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_62
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c407563814433f9b1e835fddd15b1e
+      internalID: 1666361636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_63
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67c0460e76a9275b84ba256606183c2
+      internalID: 747254235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_64
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4fc34c2ae683463582edf60abc499ae
+      internalID: 1242147091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_65
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37f298d21e4cc2f4857acb1b96161b3
+      internalID: -334049663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_66
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd227470914e54ea8c627ca1551b572
+      internalID: -1701855415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_67
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0b2a2c0db36e4dabb0fcbef4a71c41
+      internalID: -62874748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_68
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a144233c71fdfe62ba09ce5bb1790eaa
+      internalID: 1390769849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_69
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c403abfdcb6ce3a39cd6527d85c0acd
+      internalID: -1472479230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_70
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9716cf3aa1a4bffb8842cb33de6491e
+      internalID: -1467081198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_71
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8ff1eeed0aa204b69a2dad968d2d0fd
+      internalID: -766065705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_72
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24481fe3353120f9fb76b0b65c61cddd
+      internalID: -1356200697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_73
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa4dbf67845aa0e2b5e8a0dcdbaffde
+      internalID: -599055775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_74
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 690
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c45298683b3e2adab4d83d4a07398d5
+      internalID: -420662075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6245747ad0c4b1c00b0d9078c369c239
+      internalID: 230726647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_76
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b16075e08f85af8d78f9fb11a7675d6e
+      internalID: 1524461750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_77
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 563d400550c733a53a79997bcc142baf
+      internalID: 806993095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_78
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a3b5c8edca94d4b9c0416343790ce5
+      internalID: -1698733423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_79
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fd0e1b031f713b0abed3dd930380f7c
+      internalID: -1352676304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_80
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2977a7c39ee533cbb91661fb1a50dbcf
+      internalID: -1915465939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_81
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34b34931ecbe675328c42693286d6ed2
+      internalID: -1017110231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_82
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5eba1f98ee10bd108349963791d0dd2
+      internalID: 2043678537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_83
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d327277656768aaf3bab5d6075f822da
+      internalID: 191288484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_84
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453e53958543f10ea8c02bb4c1a6352f
+      internalID: 1033201330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_85
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1481a840c715e2d1f8cd726cddd4d4fa
+      internalID: -1005797481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_86
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560015bf2cb0b949abe70ac6695f649a
+      internalID: -73521905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_87
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa976ad66f5ee69fa0b2d9f68006a76
+      internalID: -437732308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_88
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38eb0f184b4d10563b14c390222d9ce5
+      internalID: -1644070826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_89
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 626
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edb79ca5740a6013d8e4cdad6bfc49ac
+      internalID: -603236938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_90
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 562
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba429bdc1dc29fd58c5607ece6d38b8
+      internalID: -1907649500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_91
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 562
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2cd02cf9d0ebb89988b8e52d10a2bc
+      internalID: 1490231491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_92
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 562
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e8bc976b73953c14a91efe187fa1458
+      internalID: 149508589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_93
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 562
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c48970959a687b4b7b9595849ebe1d
+      internalID: 1841518903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_94
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 562
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37392d411dc3c9691abdae20dd3d5cc8
+      internalID: -1860241154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_95
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 562
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d308c0c09df410b7b82a46f2107cd9d8
+      internalID: -580488242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_96
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 562
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3b8f5e60756f499abc88e9672be4df
+      internalID: 1877846790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_97
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 562
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1490dd373716bf5bc3a632ce7ef3ba
+      internalID: -886199615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_98
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 562
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef2cac3ce936acc999395eb9b9ad0ae
+      internalID: -1452624707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_99
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 562
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e304387bb76671a419f01fd37b9263ab
+      internalID: 808241215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_100
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 562
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7c091719549cc6e69086f35e8066885
+      internalID: -177742038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_101
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 562
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515e32784f7cfc50ba708d2ee6981398
+      internalID: -1584426516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_102
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 562
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ed2a117bb492a668cfee84c86719d4
+      internalID: 807652373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_103
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 562
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07374ca4c6df09a64b231a55adb02439
+      internalID: 1490131042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_104
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135b47afe8c42e7149ae88b44642718c
+      internalID: 1670705667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_105
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6dd5979a25761296b5f2ce9e86d78fe
+      internalID: 2070945288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_106
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99830c6de48be57f6988cbe79221e5fa
+      internalID: -368773780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_107
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3fd887c38a31a70956370edece3efb
+      internalID: -1796248874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_108
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11044e8a97f415f46acf574310af1549
+      internalID: 817999563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_109
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254cf3e1b6a60dbdbbf29d043d4534b5
+      internalID: 252071981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_110
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db61ebbb390b563e3bbfc4a656fd8eb2
+      internalID: 1204006680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_111
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f28a065fae78ea5b90f13a489f16ec
+      internalID: 579751535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_112
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5c29fe1aa43de7fa0bcd52940c0b4e
+      internalID: -1351313585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_113
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4847d93935619769dcf89b620ef5bd
+      internalID: 73901245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_114
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7edd432e9f085792cb9135ee04a892ac
+      internalID: -979597714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_115
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70da6be8066814b0d86efad72f8125bf
+      internalID: -91935688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_116
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0c47b0caf0a2c7c18dab55c0d8a5aea
+      internalID: 1374087573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_117
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2167804d919df160ebf443e1047845d9
+      internalID: 1738058389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_118
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 498
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1acb7a095d0452f293e7ae41c300f77
+      internalID: 1003258380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_119
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 434
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c1f03a6e3f361fba72ba084b2d2b77
+      internalID: 1153711810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_120
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 434
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d97f68ca82dd4924eaa3ddb93dc7b1a7
+      internalID: -1113372220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_121
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 434
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2165ab1e09aa325009eef577cc9f306d
+      internalID: -714165002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_122
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 434
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df2a35e5ce655df19032f57afa66fcb
+      internalID: -1620282478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_123
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 434
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356d68880c2a3fed7b3756a3bbf6bc53
+      internalID: 112134071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_124
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 434
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13114b851547e8c5bf6e09d85576d7b
+      internalID: -1993149337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_125
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 434
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6515c843f3571b6cb9fde6c6b3b16186
+      internalID: -1222813627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_126
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 434
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81f64e34f363137a8efd99610ffa81b
+      internalID: -1195973871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_127
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 434
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32a948b10a7da050b5b046de4a24d03
+      internalID: -1953010116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_128
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 434
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13e2975cde93f3effa8f70d2bd1201cb
+      internalID: -1064309464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_129
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 434
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec89410b07f23e7b3ad7535a7ee86189
+      internalID: 680408430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_130
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 434
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7a0dc868186e22c9e363c2b0ceb700
+      internalID: -250860234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_131
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 434
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87dbc990c77e06f129afd328a6549fd5
+      internalID: -1288694364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_132
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 434
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d44261b78e0129ab9895a4c0b740e35
+      internalID: 2092897984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_133
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 434
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddc700f960b3f15c8d9c79b41090f8e
+      internalID: 953187209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_134
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9e75624856beae8a31027b8a54c3bd
+      internalID: -1534742449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_135
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1065cb2479cdac3f59a26c440e63eed7
+      internalID: -1917328517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_136
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b624dd95a39c877972c2d046949710
+      internalID: 1753513172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_137
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2382dafcc68d78ef4bc4ff2966506095
+      internalID: 1085141044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_138
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca5c4ff1f9b8cf309cce37546eda7e3
+      internalID: 1303622113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_139
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d597d73a2fb5009de8459f87bcc28909
+      internalID: -1101646842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_140
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4181768d127136307a86a81b9a4f520e
+      internalID: 104752295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_141
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 107f260033233ab10baaa89f41985c63
+      internalID: 575428874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_142
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23aa8012a86383327b3cf4f832678d59
+      internalID: 462020584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_143
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09705e1f043fb831dbada22e5b1c514b
+      internalID: -1318251076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_144
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029851d61366841279fa3059becc10f8
+      internalID: -1153009367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_145
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a80c9e4ea6978c2ebbf074af4d17952
+      internalID: 136789949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_146
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 748d0eb837d12cb9eb8ac48bd97aca52
+      internalID: -1622736157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_147
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f816308a978d1a32bad857ef7fd45aeb
+      internalID: -1525258638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_148
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 370
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc491d0f7f36502b84fe127a05c046e
+      internalID: 1894055763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_149
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3914bf1241f27c0bba92ef53bc2d675d
+      internalID: 27643511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_150
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f26ea7e2b73dc47a88709336e216ab00
+      internalID: -1218447266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_151
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884b809f9d77e18359634b39cd684d04
+      internalID: -1972588140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_152
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6d4ccf446dfa73abe4d9503bacb91e
+      internalID: -587768441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_153
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c31a03b38ed44627085336d9dcab292a
+      internalID: -512889143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_154
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6d51c1583de4c49b02508c6afa67ff
+      internalID: -1290452764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_155
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c64d66d4eb4fe877e921f669ae49e2cd
+      internalID: -817027426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_156
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bef097aff5cbb7a4bccaa94fe88b81e
+      internalID: -1311864769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_157
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27bec1c4d60328b880b1f7a9a8908a1
+      internalID: 646059214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_158
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913234ea3a586fe05870fa4292694fa3
+      internalID: -446963706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_159
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581281d881679773d9ec4bb6c985f65f
+      internalID: 665394212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_160
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbb5739b53332054ea9db088b8bdf270
+      internalID: -1763648543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_161
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06286c4065289005097e9168b97839ff
+      internalID: -1780904627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_162
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8fc67fc10ff173d891ab1a9fd247d9f
+      internalID: -1686717687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_163
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 306
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0c4a08b1ea17cdca5c72b9dada5a8d
+      internalID: -567232849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_164
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d10ae71f560ff268fcf5a8523d26f7
+      internalID: 115983362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_165
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdbc6510ae9f52da7b43679d74f24e0b
+      internalID: 385366434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_166
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caa1b57040953358996188de872878c7
+      internalID: 1631441205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_167
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3976d3a93fe23cb8ba13a116fec7715
+      internalID: 1886044121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_168
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6258714e56381a6fb595636bd7ea8c8
+      internalID: 1103308277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_169
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0732ef0b6a53e4a5afe06bed297f003
+      internalID: -1605023644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_170
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6a6b4e2ccd55c096b5943c7c0d49b73
+      internalID: 1710683266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_171
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9954d246374548fda4e4002c8c182dd
+      internalID: 1906335962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_172
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ea0dd3e722e7fe0b29858eb4f39057
+      internalID: -2818196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_173
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967111dc761b263d9a4738ff57ffc43c
+      internalID: 138641330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_174
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2213a680126c8044907e44af348d500
+      internalID: -707461959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_175
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54f1fe90799e4dbd94935a649993c68
+      internalID: -912966679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_176
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ec1879d904dce55a0ccc8a113e9523
+      internalID: -333948447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_177
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 242
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0baf13ba3ee8ccf979cbbc1541c977ca
+      internalID: -1349861260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_178
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05717b8833b27f37e9802df7ccca55f6
+      internalID: -530657719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_179
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb386f5c8d2c059b85517a7585a088b
+      internalID: 359765035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_180
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7463926a34f0db25297d292a882e38f1
+      internalID: 1299005546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_181
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13477f0fb7aba8a4fb8d29e7742e50e7
+      internalID: 643589498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_182
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47481530fa7e5a24a801e2c5edd7a39
+      internalID: -1973581133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_183
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccaf2746845822db0aa18477919adaad
+      internalID: -1372607667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_184
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c8af928a44b508991d3f7bfd341a00
+      internalID: 148385648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_185
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8586cdf990e2e7a5a492be879187048
+      internalID: 1178059462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_186
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776942d4261527df591eb77e41fc8cf5
+      internalID: 1764607444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_187
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd76363153c0a959b0f9e16f3320487
+      internalID: -1897111273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_188
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a2e1df7e4cbf2a9b28fbc8a811f95f
+      internalID: -1132208114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_189
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db99fd9fd96af75818457a5fef819b8f
+      internalID: 1586333391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_190
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5246eadf34e7d958da1315a417eaf1a7
+      internalID: 420543450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_191
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 178
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b526e14fdf57f1a9a87e4095db6afeed
+      internalID: 1910985101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_192
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b04e9dddd3538b6a7a176cb9b28056
+      internalID: 2075939109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_193
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc994c9931838d88bb4486c004f4f2e
+      internalID: -908751023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_194
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab818823b9dd393aa9b9ea74bd33fb20
+      internalID: -549188136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_195
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6b0807072c2cd4990f18e79b53b558
+      internalID: 1996307042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_196
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa45910fb99d39ba887f1ead097eb468
+      internalID: -1049082087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_197
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ff4dccb4f607a98fbdff2c5d86e1858
+      internalID: 1197240529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_198
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d33b5e3531f84c2e1b65721c695781b4
+      internalID: -1100108287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_199
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b5a153436f063f7b4a9080564d5308
+      internalID: 1688917237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_200
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 331c41763ba41339ebc6c56dcac14e8f
+      internalID: -1834203570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_201
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad748393c96f54026b55b451f8a229dc
+      internalID: 1232696847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_202
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072af663733419936954a367c0fd0aa2
+      internalID: -846282011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_203
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04879164fbfca2d2860a16723fee6a5
+      internalID: 1512130430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_204
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a784078eefb2c232a78c44962df679b
+      internalID: 751629607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_205
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c5cea1a5da6fd319e457dc4d504e3c
+      internalID: 411510117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_206
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 114
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ec719bb7ba8583309b43e45d7e2ac7b
+      internalID: 519665624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_207
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a022c878e70d3489da7b2b6d042dde03
+      internalID: -1161973715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_208
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52a3796d9a0c1d0518e199310a1b8bd4
+      internalID: 177452213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_209
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ce1922354bb9cf796db272366569fa
+      internalID: 400622627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_210
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f5bc20b7a43d328bfb53a539fdd074
+      internalID: 761433577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_211
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891546f1d904d56a191e061592d58b87
+      internalID: -1317754599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_212
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b2d654fa2d87908b4d04f5ceb9ba5e
+      internalID: -884856624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_213
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df023b9cece719600bb892f52cf04e6e
+      internalID: -22062947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_214
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f6006bb201aeb3dac698821ace5dee
+      internalID: 1655910244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_215
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fb91b576799103d8f70935a3121621
+      internalID: 14790551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_216
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69645148cdb5b487f8b23f8aa17a083b
+      internalID: -507782837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_217
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a066f8d9cdb583fb7a2b4ae8e1c6aa83
+      internalID: 239457139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_218
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732e3fede84a863ae8b02f8025c53536
+      internalID: 1283430929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_219
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558e0f221547a54cfabbe6c5c7dc625a
+      internalID: -445517921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_220
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcb2130066f2ed711bb524e38ac3c9da
+      internalID: -903348382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plat1_221
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 50
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5950a74236bb932c68bee8ee3c3fbb2a
+      internalID: -466607585
       vertices: []
       indices: 
       edges: []
@@ -136,6 +4998,227 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       plat1_0: -1742050471295858174
+      plat1_1: -1646132571
+      plat1_10: 273970355
+      plat1_100: -177742038
+      plat1_101: -1584426516
+      plat1_102: 807652373
+      plat1_103: 1490131042
+      plat1_104: 1670705667
+      plat1_105: 2070945288
+      plat1_106: -368773780
+      plat1_107: -1796248874
+      plat1_108: 817999563
+      plat1_109: 252071981
+      plat1_11: -338933663
+      plat1_110: 1204006680
+      plat1_111: 579751535
+      plat1_112: -1351313585
+      plat1_113: 73901245
+      plat1_114: -979597714
+      plat1_115: -91935688
+      plat1_116: 1374087573
+      plat1_117: 1738058389
+      plat1_118: 1003258380
+      plat1_119: 1153711810
+      plat1_12: 954410242
+      plat1_120: -1113372220
+      plat1_121: -714165002
+      plat1_122: -1620282478
+      plat1_123: 112134071
+      plat1_124: -1993149337
+      plat1_125: -1222813627
+      plat1_126: -1195973871
+      plat1_127: -1953010116
+      plat1_128: -1064309464
+      plat1_129: 680408430
+      plat1_13: -499916324
+      plat1_130: -250860234
+      plat1_131: -1288694364
+      plat1_132: 2092897984
+      plat1_133: 953187209
+      plat1_134: -1534742449
+      plat1_135: -1917328517
+      plat1_136: 1753513172
+      plat1_137: 1085141044
+      plat1_138: 1303622113
+      plat1_139: -1101646842
+      plat1_14: -1246575851
+      plat1_140: 104752295
+      plat1_141: 575428874
+      plat1_142: 462020584
+      plat1_143: -1318251076
+      plat1_144: -1153009367
+      plat1_145: 136789949
+      plat1_146: -1622736157
+      plat1_147: -1525258638
+      plat1_148: 1894055763
+      plat1_149: 27643511
+      plat1_15: 1746400521
+      plat1_150: -1218447266
+      plat1_151: -1972588140
+      plat1_152: -587768441
+      plat1_153: -512889143
+      plat1_154: -1290452764
+      plat1_155: -817027426
+      plat1_156: -1311864769
+      plat1_157: 646059214
+      plat1_158: -446963706
+      plat1_159: 665394212
+      plat1_16: 916397362
+      plat1_160: -1763648543
+      plat1_161: -1780904627
+      plat1_162: -1686717687
+      plat1_163: -567232849
+      plat1_164: 115983362
+      plat1_165: 385366434
+      plat1_166: 1631441205
+      plat1_167: 1886044121
+      plat1_168: 1103308277
+      plat1_169: -1605023644
+      plat1_17: -1046801100
+      plat1_170: 1710683266
+      plat1_171: 1906335962
+      plat1_172: -2818196
+      plat1_173: 138641330
+      plat1_174: -707461959
+      plat1_175: -912966679
+      plat1_176: -333948447
+      plat1_177: -1349861260
+      plat1_178: -530657719
+      plat1_179: 359765035
+      plat1_18: 673323447
+      plat1_180: 1299005546
+      plat1_181: 643589498
+      plat1_182: -1973581133
+      plat1_183: -1372607667
+      plat1_184: 148385648
+      plat1_185: 1178059462
+      plat1_186: 1764607444
+      plat1_187: -1897111273
+      plat1_188: -1132208114
+      plat1_189: 1586333391
+      plat1_19: 1527755565
+      plat1_190: 420543450
+      plat1_191: 1910985101
+      plat1_192: 2075939109
+      plat1_193: -908751023
+      plat1_194: -549188136
+      plat1_195: 1996307042
+      plat1_196: -1049082087
+      plat1_197: 1197240529
+      plat1_198: -1100108287
+      plat1_199: 1688917237
+      plat1_2: 1912787667
+      plat1_20: 227339038
+      plat1_200: -1834203570
+      plat1_201: 1232696847
+      plat1_202: -846282011
+      plat1_203: 1512130430
+      plat1_204: 751629607
+      plat1_205: 411510117
+      plat1_206: 519665624
+      plat1_207: -1161973715
+      plat1_208: 177452213
+      plat1_209: 400622627
+      plat1_21: -1841331976
+      plat1_210: 761433577
+      plat1_211: -1317754599
+      plat1_212: -884856624
+      plat1_213: -22062947
+      plat1_214: 1655910244
+      plat1_215: 14790551
+      plat1_216: -507782837
+      plat1_217: 239457139
+      plat1_218: 1283430929
+      plat1_219: -445517921
+      plat1_22: -876562257
+      plat1_220: -903348382
+      plat1_221: -466607585
+      plat1_23: -889173629
+      plat1_24: 33496328
+      plat1_25: -353206772
+      plat1_26: 1595776099
+      plat1_27: 1579251180
+      plat1_28: -596952592
+      plat1_29: -394933577
+      plat1_3: 1000107342
+      plat1_30: 1099094084
+      plat1_31: 1485033445
+      plat1_32: 1390877830
+      plat1_33: -1478681804
+      plat1_34: 746061291
+      plat1_35: -984257369
+      plat1_36: -2032050637
+      plat1_37: 1551797382
+      plat1_38: -1467565651
+      plat1_39: -2009344388
+      plat1_4: 986463131
+      plat1_40: -1291828409
+      plat1_41: -1114194759
+      plat1_42: 1501198551
+      plat1_43: -175055260
+      plat1_44: -513525304
+      plat1_45: -352308255
+      plat1_46: -1041239889
+      plat1_47: 554417903
+      plat1_48: 1001718508
+      plat1_49: 354802947
+      plat1_5: -987333799
+      plat1_50: -615166931
+      plat1_51: 886112507
+      plat1_52: 424632580
+      plat1_53: -393761780
+      plat1_54: 1562117664
+      plat1_55: -201606653
+      plat1_56: 338937352
+      plat1_57: -1564756093
+      plat1_58: -1819012627
+      plat1_59: -1177347997
+      plat1_6: -998396746
+      plat1_60: -386478922
+      plat1_61: 1496266703
+      plat1_62: 1666361636
+      plat1_63: 747254235
+      plat1_64: 1242147091
+      plat1_65: -334049663
+      plat1_66: -1701855415
+      plat1_67: -62874748
+      plat1_68: 1390769849
+      plat1_69: -1472479230
+      plat1_7: 1498985553
+      plat1_70: -1467081198
+      plat1_71: -766065705
+      plat1_72: -1356200697
+      plat1_73: -599055775
+      plat1_74: -420662075
+      plat1_75: 230726647
+      plat1_76: 1524461750
+      plat1_77: 806993095
+      plat1_78: -1698733423
+      plat1_79: -1352676304
+      plat1_8: 505294240
+      plat1_80: -1915465939
+      plat1_81: -1017110231
+      plat1_82: 2043678537
+      plat1_83: 191288484
+      plat1_84: 1033201330
+      plat1_85: -1005797481
+      plat1_86: -73521905
+      plat1_87: -437732308
+      plat1_88: -1644070826
+      plat1_89: -603236938
+      plat1_9: 1702768356
+      plat1_90: -1907649500
+      plat1_91: 1490231491
+      plat1_92: 149508589
+      plat1_93: 1841518903
+      plat1_94: -1860241154
+      plat1_95: -580488242
+      plat1_96: 1877846790
+      plat1_97: -886199615
+      plat1_98: -1452624707
+      plat1_99: 808241215
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
