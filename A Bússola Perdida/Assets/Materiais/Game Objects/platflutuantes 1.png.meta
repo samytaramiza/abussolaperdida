@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: cb9591006d23c32c4bd5774e827f8b78
+guid: 567acefa6a8ff51bfabdab6cb72e938d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -577275314446252889
-    second: platquadradas_0
+      213: 7514531739671591006
+    second: platflutuantes 1_0
+  - first:
+      213: 744826713659328723
+    second: platflutuantes 1_1
+  - first:
+      213: 7627424515631517523
+    second: platflutuantes 1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: platquadradas_0
+      name: platflutuantes 1_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 2908
+        y: 5824
         width: 1450
-        height: 1454
+        height: 1456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,64 +121,64 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a444d8f82b1df7f0800000000000000
-      internalID: -577275314446252889
+      spriteID: e58f584bdcaf84860800000000000000
+      internalID: 7514531739671591006
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: platquadradas_1
+      name: platflutuantes 1_1
       rect:
         serializedVersion: 2
         x: 1450
-        y: 2908
+        y: 5824
         width: 1450
-        height: 1454
+        height: 1456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 336e188a378d7e46284be8c2b6df2b8b
-      internalID: 63401461
+      spriteID: 3d8c2e623f7265a00800000000000000
+      internalID: 744826713659328723
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: platquadradas_2
+      name: platflutuantes 1_2
       rect:
         serializedVersion: 2
         x: 2900
-        y: 2908
+        y: 5824
         width: 1450
-        height: 1454
+        height: 1456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 03425af17f34bd54aa7caac11783cd33
-      internalID: 1682990796
+      spriteID: 35f82556f2e0ad960800000000000000
+      internalID: 7627424515631517523
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: platquadradas_3
+      name: platflutuantes 1_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 1454
+        y: 4368
         width: 1450
-        height: 1454
+        height: 1456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9e1e650f31253a94863ce0d81381220
-      internalID: 2002783221
+      spriteID: 4140b9dd11d3984a0b033c22fbb5f451
+      internalID: 1530813074
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: platquadradas_4
+      name: platflutuantes 1_4
       rect:
         serializedVersion: 2
         x: 1450
-        y: 1454
+        y: 4368
         width: 1450
-        height: 1454
+        height: 1456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +209,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 686c50ed242dae912953a83fbe24211d
-      internalID: -799656995
+      spriteID: 6a641f01c109d7df3bd7406cfe459f9a
+      internalID: -658295478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: platquadradas_5
+      name: platflutuantes 1_5
       rect:
         serializedVersion: 2
         x: 2900
-        y: 1454
+        y: 4368
         width: 1450
-        height: 1454
+        height: 1456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -225,20 +231,152 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9bf93d1230124ee68ada26cc5dba42f8
-      internalID: 994207131
+      spriteID: 003f7a338187b4227847347ccae1e74a
+      internalID: 447081119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: platquadradas_6
+      name: platflutuantes 1_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2912
+        width: 1450
+        height: 1456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d6cd48a970efb1d581548d07e5ab595
+      internalID: -1678897289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platflutuantes 1_7
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 2912
+        width: 1450
+        height: 1456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5396ef97f41471b5a3735e959983aa1
+      internalID: 2126951073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platflutuantes 1_8
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 2912
+        width: 1450
+        height: 1456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5b471bdacd6b0a5895975aed38093a
+      internalID: 1210120858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platflutuantes 1_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1456
+        width: 1450
+        height: 1456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1083e57b3f9cb11a4ab13cec11ffa69e
+      internalID: 1735781323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platflutuantes 1_10
+      rect:
+        serializedVersion: 2
+        x: 1450
+        y: 1456
+        width: 1450
+        height: 1456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c42bfa95c5990d595675609b08b78b
+      internalID: 659772888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platflutuantes 1_11
+      rect:
+        serializedVersion: 2
+        x: 2900
+        y: 1456
+        width: 1450
+        height: 1456
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91649580ee95ff968f3732217d0d264
+      internalID: -1963661972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: platflutuantes 1_12
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 1450
-        height: 1454
+        height: 1456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +385,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd3c7b233b0141d749df2c4aa10921e0
-      internalID: -1398626050
+      spriteID: 2b403906ed492a353a850f8c9828896e
+      internalID: -1726588622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: platquadradas_7
+      name: platflutuantes 1_13
       rect:
         serializedVersion: 2
         x: 1450
         y: 0
         width: 1450
-        height: 1454
+        height: 1456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,20 +407,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c330732814a0b7f57a470ece16bb8e67
-      internalID: 151322391
+      spriteID: c7cb6de1c1fd5995d87ace31333e2413
+      internalID: 1980912714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: platquadradas_8
+      name: platflutuantes 1_14
       rect:
         serializedVersion: 2
         x: 2900
         y: 0
         width: 1450
-        height: 1454
+        height: 1456
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,8 +429,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3687cfc4fba525bceba48f4237ec8f71
-      internalID: -1560367267
+      spriteID: b3c8cda934dc64d69abd4eb1d18f99d3
+      internalID: -1598096388
       vertices: []
       indices: 
       edges: []
@@ -301,7 +439,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 143fa7f9432bfabde8cc31ca994ac6e6
+    spriteID: 480b94ada28f02e7992e68d87d03687e
     internalID: 0
     vertices: []
     indices: 
@@ -311,15 +449,21 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      platquadradas_0: -577275314446252889
-      platquadradas_1: 63401461
-      platquadradas_2: 1682990796
-      platquadradas_3: 2002783221
-      platquadradas_4: -799656995
-      platquadradas_5: 994207131
-      platquadradas_6: -1398626050
-      platquadradas_7: 151322391
-      platquadradas_8: -1560367267
+      platflutuantes 1_0: 7514531739671591006
+      platflutuantes 1_1: 744826713659328723
+      platflutuantes 1_10: 659772888
+      platflutuantes 1_11: -1963661972
+      platflutuantes 1_12: -1726588622
+      platflutuantes 1_13: 1980912714
+      platflutuantes 1_14: -1598096388
+      platflutuantes 1_2: 7627424515631517523
+      platflutuantes 1_3: 1530813074
+      platflutuantes 1_4: -658295478
+      platflutuantes 1_5: 447081119
+      platflutuantes 1_6: -1678897289
+      platflutuantes 1_7: 2126951073
+      platflutuantes 1_8: 1210120858
+      platflutuantes 1_9: 1735781323
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
