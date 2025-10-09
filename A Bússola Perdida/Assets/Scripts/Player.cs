@@ -91,6 +91,7 @@ public class Player : MonoBehaviour
     }
 
     //Detecta colisões
+    //Detecta colisões normais com chão ou perigos
     void OnCollisionEnter2D(Collision2D collision)
     {
         //Layer 8 = chão
@@ -100,18 +101,20 @@ public class Player : MonoBehaviour
             //anim.SetBool("Jump", false);
         }
 
-        //Tag "Abismo" = objeto que mata o jogador
-        if (collision.gameObject.CompareTag("Abismo"))
-        {
-            GameController.instance.ShowGameOver(); //mostra tela de game over
-            Destroy(gameObject); //remove o jogador
-        }
-
         if (collision.gameObject.CompareTag("Perigo"))
         {
             GameController.instance.AlterarVida(-10f);
         }
+    }
 
+    //Detecta triggers (como o abismo)
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Abismo"))
+        {
+            GameController.instance.ShowGameOver(); //mostra tela de game over
+            Destroy(gameObject); //remove o jogador
+        }
     }
 
     //Detecta quando o jogador sai do chão
