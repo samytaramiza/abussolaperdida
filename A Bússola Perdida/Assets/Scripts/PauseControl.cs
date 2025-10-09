@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class PauseManager : MonoBehaviour
 {
-    public GameObject panelConfig;  // painel de configurações
-    private bool isPause;           // controla o estado de pausa
+    public GameObject panelConfig;// painel de configurações
+    private bool isPause; // controla o estado de pausa
 
     void Start()
     {
@@ -40,7 +40,7 @@ public class PauseManager : MonoBehaviour
         }
     }
 
-    // 👉 Esse método será chamado pelo botão "Voltar"
+    //Esse método será chamado pelo botão "Voltar"
     public void OnVoltarButton()
     {
         UnPause(); // simplesmente despausa e fecha o painel

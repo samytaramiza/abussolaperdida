@@ -100,7 +100,7 @@ public class Player : MonoBehaviour
             //anim.SetBool("Jump", false);
         }
 
-        //Tag "Perigo" = objeto que mata o jogador
+        //Tag "Abismo" = objeto que mata o jogador
         if (collision.gameObject.CompareTag("Abismo"))
         {
             GameController.instance.ShowGameOver(); //mostra tela de game over
