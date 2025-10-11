@@ -409,8 +409,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1216503454}
     - target: {fileID: 2344514418877054366, guid: 6a8d6553df726d54983a2a264d5e5b4c, type: 3}
+      propertyPath: ultimaFase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344514418877054366, guid: 6a8d6553df726d54983a2a264d5e5b4c, type: 3}
       propertyPath: nextLvlName
-      value: Fase2
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2344514418877054366, guid: 6a8d6553df726d54983a2a264d5e5b4c, type: 3}
       propertyPath: PanelVictory
@@ -8204,7 +8208,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Fase1
+          m_StringArgument: Fase4
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &658958322
