@@ -1,10 +1,35 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SoundManager : MonoBehaviour
+public class AudioManager : MonoBehaviour
 {
+    public static AudioManager Instance;
     //SerializeFiel - se usa quando o atribute deve ser privado, mas aparacer no editor
     [SerializeField] Slider VolumeSlider;
+
+    [Header("Efeitos Sonoros")]
+    public AudioClip jumpSound;
+    public AudioClip collectSound;
+
+    private AudioSource audioSource;
+    private AudioClip moedaSound;
+
+    void Awake()
+    {
+        // Garante que só exista um AudioManager
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // não destruir entre cenas
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        audioSource = GetComponent<AudioSource>();
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -38,5 +63,16 @@ public class SoundManager : MonoBehaviour
         //armazena o valor do volume
         PlayerPrefs.SetFloat("musicVolume", VolumeSlider.value);
     }
+
+    public void PlayJump()
+    {
+        audioSource.PlayOneShot(jumpSound);
+    }
+
+    public void PlayAudioMoeda()
+    {
+        audioSource.PlayOneShot(moedaSound);
+    }
+
 
 }
