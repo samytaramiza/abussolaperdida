@@ -9881,6 +9881,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1038505719}
+  - component: {fileID: 1038505720}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -9903,6 +9904,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1038505720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1038505718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c42c39a6e2e51e45a221b6c101b97fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VolumeSlider: {fileID: 0}
+  jumpSound: {fileID: 0}
+  collectSound: {fileID: 8300000, guid: 89989cef5a69c50b096415fa738769e2, type: 3}
 --- !u!4 &1073792681 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6147735646835598849, guid: 99c455da83ade284fbaeb5eabf716765, type: 3}
@@ -13575,6 +13591,7 @@ GameObject:
   - component: {fileID: 1998724591}
   - component: {fileID: 1998724590}
   - component: {fileID: 1998724589}
+  - component: {fileID: 1998724592}
   m_Layer: 8
   m_Name: Ground
   m_TagString: Untagged
@@ -15839,6 +15856,21 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!114 &1998724592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998724585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c42c39a6e2e51e45a221b6c101b97fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  VolumeSlider: {fileID: 0}
+  jumpSound: {fileID: 0}
+  collectSound: {fileID: 0}
 --- !u!1 &2048540855
 GameObject:
   m_ObjectHideFlags: 0
