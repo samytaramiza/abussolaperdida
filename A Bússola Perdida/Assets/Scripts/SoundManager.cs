@@ -9,10 +9,10 @@ public class AudioManager : MonoBehaviour
 
     [Header("Efeitos Sonoros")]
     public AudioClip jumpSound;
-    public AudioClip collectSound;
+    public AudioClip coinSound;
+    public AudioClip potionSound;
 
     private AudioSource audioSource;
-    private AudioClip moedaSound;
 
     void Awake()
     {
@@ -71,7 +71,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayAudioMoeda()
     {
-        audioSource.PlayOneShot(moedaSound);
+        audioSource.PlayOneShot(coinSound);
     }
 
 

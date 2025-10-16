@@ -5,11 +5,18 @@ public class Menu : MonoBehaviour
 {
     public GameObject PanelConfig;
 
+    public GameObject imagePocao;
+    public GameObject imageRosa;
+    public GameObject barraDeVida;
+
     public void AbrirConfig() 
     {
         if (PanelConfig != null)
         {
             PanelConfig.SetActive(true); // Ativa o Canvas
+            imagePocao.SetActive(false);
+            imageRosa.SetActive(false);
+            barraDeVida.SetActive(false);
         }
     }
     
