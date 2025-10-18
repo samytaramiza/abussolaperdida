@@ -77,6 +77,7 @@ public class Player : MonoBehaviour
                 rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
                 doubleJump = true; //habilita o segundo pulo
                 //anim.SetBool("Jump", true);
+                AudioManager.Instance.PlayJump();               
             }
             else
             {
@@ -86,6 +87,7 @@ public class Player : MonoBehaviour
                     rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
                     doubleJump = false; //desabilita o segundo pulo
                     //anim.SetBool("Jump", true);
+                    AudioManager.Instance.PlayJump();  
                 }
             }
         }

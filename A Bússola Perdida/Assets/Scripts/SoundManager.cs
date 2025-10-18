@@ -74,5 +74,10 @@ public class AudioManager : MonoBehaviour
         audioSource.PlayOneShot(coinSound);
     }
 
+    public void PlayAudioPotion()
+    {
+        audioSource.PlayOneShot(coinSound);
+    }
+
 
 }
