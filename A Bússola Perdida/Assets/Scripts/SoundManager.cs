@@ -34,6 +34,8 @@ public class AudioManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+        
         if(!PlayerPrefs.HasKey("musicVolume"))
         {
             PlayerPrefs.SetFloat("musicVolume", 1);
@@ -76,7 +78,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayAudioPotion()
     {
-        audioSource.PlayOneShot(coinSound);
+        audioSource.PlayOneShot(potionSound);
     }
 
 

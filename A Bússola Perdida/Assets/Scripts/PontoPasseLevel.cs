@@ -31,6 +31,7 @@ public class PontoPasseLevel : MonoBehaviour
                 // Ativa o painel de vitória, se ele estiver configurado no Inspector
                 if (PanelVictory != null){
                     PanelVictory.SetActive(true);
+                    
                 }
 
                 if(imgPocao != null && imgRosa != null){

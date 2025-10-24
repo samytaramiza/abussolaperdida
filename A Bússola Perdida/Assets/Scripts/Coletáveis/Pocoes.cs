@@ -33,6 +33,8 @@ public class Pocoes : MonoBehaviour
             //Atualiza o texto de UI com o novo total de poções
             GameController.instance.UpdateScoreText();
 
+            AudioManager.Instance.PlayAudioPotion();
+
             //Destroi o objeto após um pequeno delay, permitindo efeitos visuais ou som
             Destroy(gameObject, 0.3f);
         }
