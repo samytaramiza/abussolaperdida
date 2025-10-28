@@ -4,12 +4,11 @@ using UnityEngine.UI;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
-    public AudioSource audioSource;
 
     [Header("Sliders de Volume")]
     //SerializeFiel - se usa quando o atribute deve ser privado, mas aparacer no editor
-    [SerializeField] Slider sliderMusica;
-    [SerializeField] Slider sliderEfeitos;
+    [SerializeField] private Slider sliderMusica;
+    [SerializeField] private Slider sliderEfeitos;
 
     [Header("Efeitos Sonoros")]
     public AudioClip jumpSound;
@@ -34,22 +33,22 @@ public class AudioManager : MonoBehaviour
             return;
         }
 
-        audioSource = GetComponent<AudioSource>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {       
         //Carrega os volumes salvos
-        float volMusica = PlayerPrefabs.GetFloat("volMusica", 1);
-        float volEefitos = PlayerPrefabs.GetFloat("volEfeitos", 1);
+        float volMusica = PlayerPrefs.GetFloat("volMusica", 1);
+        float volEfeitos = PlayerPrefs.GetFloat("volEfeitos", 1);
+
 
         if(musicaSource != null){
             musicaSource.volume = volMusica;
         }
 
         if(efeitosSource != null){
-            efeitosSource.volume = volEefitos;
+            efeitosSource.volume = volEfeitos;
         }
 
         //Atualiza sliders, se existirem
@@ -58,7 +57,7 @@ public class AudioManager : MonoBehaviour
         }
 
         if(sliderEfeitos != null){
-            sliderEfeitos.value = volEefitos;
+            sliderEfeitos.value = volEfeitos;
         }
     }
 
@@ -67,7 +66,7 @@ public class AudioManager : MonoBehaviour
     {
         if(musicaSource != null){
             musicaSource.volume = sliderMusica.value;
-            PlayerPrefabs.SetFloat("volMusica", sliderMusica.value);
+            PlayerPrefs.SetFloat("volMusica", sliderMusica.value);
         }
     }
 
@@ -76,7 +75,7 @@ public class AudioManager : MonoBehaviour
     {
         if(efeitosSource != null){
             efeitosSource.volume = sliderEfeitos.value;
-            PlayerPrefabs.SetFloat("volEfeitos", sliderEfeitos.value);
+            PlayerPrefs.SetFloat("volEfeitos", sliderEfeitos.value);
         }
     }
 
@@ -84,17 +83,17 @@ public class AudioManager : MonoBehaviour
     // Efeitos Sonoros
     public void PlayJump()
     {
-        audioSource.PlayOneShot(jumpSound);
+        efeitosSource.PlayOneShot(jumpSound);
     }
 
     public void PlayAudioMoeda()
     {
-        audioSource.PlayOneShot(coinSound);
+        efeitosSource.PlayOneShot(coinSound);
     }
 
     public void PlayAudioPotion()
     {
-        audioSource.PlayOneShot(potionSound);
+        efeitosSource.PlayOneShot(potionSound);
     }
 
 }

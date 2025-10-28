@@ -2,19 +2,41 @@ using UnityEngine;
 
 public class PauseManager : MonoBehaviour
 {
-    public GameObject panelConfig;// painel de configurações
+    public static PauseManager Instance; // Singleton
+
+    [Header("Painel de Configurações")]
+    public GameObject panelConfig; // painel de configurações
+
     private bool isPause; // controla o estado de pausa
+
+    void Awake()
+    {
+        // Garante que só exista um PauseManager na cena
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject); // mantém o objeto entre cenas
+        }
+        else
+        {
+            Destroy(gameObject); // evita duplicatas
+            return;
+        }
+    }
 
     void Start()
     {
         // garantir que o painel comece desligado
-        panelConfig.SetActive(false);
+        if (panelConfig != null)
+            panelConfig.SetActive(false);
     }
 
     void Pause()
     {
         Time.timeScale = 0; // congela o jogo
-        panelConfig.SetActive(true); // mostra painel
+        if (panelConfig != null)
+            panelConfig.SetActive(true);
+
         Cursor.lockState = CursorLockMode.None; // libera mouse
         Cursor.visible = true;
     }
@@ -22,7 +44,9 @@ public class PauseManager : MonoBehaviour
     void UnPause()
     {
         Time.timeScale = 1; // volta o tempo
-        panelConfig.SetActive(false); // esconde painel
+        if (panelConfig != null)
+            panelConfig.SetActive(false);
+
         Cursor.lockState = CursorLockMode.Locked; // trava mouse (opcional)
         Cursor.visible = false;
     }
@@ -40,9 +64,9 @@ public class PauseManager : MonoBehaviour
         }
     }
 
-    //Esse método será chamado pelo botão "Voltar"
+    // Chamado pelo botão "Voltar"
     public void OnVoltarButton()
     {
-        UnPause(); // simplesmente despausa e fecha o painel
+        UnPause();
     }
 }
