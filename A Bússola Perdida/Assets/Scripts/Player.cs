@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public GameObject audioMoeda;
     //Velocidade de movimento
     public float Speed;
 
