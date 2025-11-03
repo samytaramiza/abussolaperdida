@@ -37,7 +37,11 @@ public class AudioManager : MonoBehaviour
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
-    {       
+    {
+        if (efeitosSource == null){
+            efeitosSource = GetComponent<AudioSource>();
+        }
+               
         //Carrega os volumes salvos
         float volMusica = PlayerPrefs.GetFloat("volMusica", 1);
         float volEfeitos = PlayerPrefs.GetFloat("volEfeitos", 1);

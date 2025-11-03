@@ -1530,8 +1530,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 779027546}
-  - component: {fileID: 779027545}
   - component: {fileID: 779027544}
+  - component: {fileID: 779027547}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -1557,8 +1557,23 @@ MonoBehaviour:
   coinSound: {fileID: 8300000, guid: 89989cef5a69c50b096415fa738769e2, type: 3}
   potionSound: {fileID: 8300000, guid: 809201f9dcc051d88964a359192c7c9d, type: 3}
   musicaSource: {fileID: 828543885}
-  efeitosSource: {fileID: 779027545}
---- !u!82 &779027545
+  efeitosSource: {fileID: 779027547}
+--- !u!4 &779027546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779027543}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -31.21053, y: -2.9587824, z: -0.04719402}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &779027547
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1570,7 +1585,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1655,21 +1670,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!4 &779027546
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 779027543}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -31.21053, y: -2.9587824, z: -0.04719402}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &809664386
 GameObject:
   m_ObjectHideFlags: 0
@@ -3417,51 +3417,6 @@ MonoBehaviour:
   imagePocao: {fileID: 0}
   imageRosa: {fileID: 0}
   barraDeVida: {fileID: 0}
---- !u!1 &1594379312
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1594379314}
-  - component: {fileID: 1594379313}
-  m_Layer: 0
-  m_Name: PauseManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1594379313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1594379312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a0eb60c556627c15aab8ecc09e56941, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PauseManager
-  panelConfig: {fileID: 1875676224}
---- !u!4 &1594379314
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1594379312}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -39.73799, y: -2.96918, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1609673912
 GameObject:
   m_ObjectHideFlags: 0
@@ -4662,5 +4617,4 @@ SceneRoots:
   - {fileID: 126905476}
   - {fileID: 1524847580}
   - {fileID: 779027546}
-  - {fileID: 1594379314}
   - {fileID: 1345310791}

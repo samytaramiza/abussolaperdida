@@ -27,8 +27,9 @@ public class PauseManager : MonoBehaviour
     void Start()
     {
         // garantir que o painel comece desligado
-        if (panelConfig != null)
+        if (panelConfig != null){
             panelConfig.SetActive(false);
+        }
     }
 
     void Pause()
