@@ -9014,7 +9014,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1436f6647f60c1429a4ad741430954c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxInfinite
-  parallaxEffect: 0.2
+  parallaxEffect: 0.7
 --- !u!1 &875827521
 GameObject:
   m_ObjectHideFlags: 0
@@ -10871,7 +10871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1436f6647f60c1429a4ad741430954c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ParallaxInfinite
-  parallaxEffect: 0.8
+  parallaxEffect: 1
 --- !u!1 &1259805014
 GameObject:
   m_ObjectHideFlags: 0
@@ -12020,7 +12020,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1436f6647f60c1429a4ad741430954c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
-  parallaxEffect: 0.8
+  parallaxEffect: 1
 --- !u!1001 &1486394619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12609,7 +12609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1436f6647f60c1429a4ad741430954c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
-  parallaxEffect: 0.2
+  parallaxEffect: 0.7
 --- !u!1 &1575743813
 GameObject:
   m_ObjectHideFlags: 0
