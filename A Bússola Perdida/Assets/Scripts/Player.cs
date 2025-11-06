@@ -18,13 +18,13 @@ public class Player : MonoBehaviour
     // Componentes
     private AudioSource sound; //(não usado ainda) para sons
     private Rigidbody2D rig; // corpo físico do jogador
-    //private Animator anim;     // animações (desativado por enquanto)
+    private Animator anim; // animações 
 
     void Start()
     {
         //Obtém a referência ao Rigidbody2D
         rig = GetComponent<Rigidbody2D>();
-        //anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -46,21 +46,21 @@ public class Player : MonoBehaviour
         //Virar o sprite para a direita
         if (Input.GetAxis("Horizontal") > 0f)
         {
-            //anim.SetBool("Walk", true);
+            anim.SetBool("Walk", true);
             transform.eulerAngles = new Vector3(0f, 0f, 0f);
         }
 
         // Virar o sprite para a esquerda
         if (Input.GetAxis("Horizontal") < 0f)
         {
-            //anim.SetBool("Walk", true);
+            anim.SetBool("Walk", true);
             transform.eulerAngles = new Vector3(0f, 180f, 0f);
         }
 
-        //Parado (poderia ser usado para animação)
+        // Para quando o player estiver parado, rodar a animação idle
         if (Input.GetAxis("Horizontal") == 0f)
         {
-            //anim.SetBool("Walk", false);
+            anim.SetBool("Walk", false);
         }
     }
 
@@ -75,7 +75,7 @@ public class Player : MonoBehaviour
             {
                 rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
                 doubleJump = true; //habilita o segundo pulo
-                //anim.SetBool("Jump", true);
+                anim.SetBool("Jump", true);
                 AudioManager.Instance.PlayJump();               
             }
             else
@@ -100,13 +100,14 @@ public class Player : MonoBehaviour
         if (collision.gameObject.layer == 8)
         {
             isJumping = false;
-            //anim.SetBool("Jump", false);
+            anim.SetBool("Jump", false);
         }
 
         if (collision.gameObject.CompareTag("Perigo"))
         {
             GameController.instance.AlterarVida(-10f);
         }
+
     }
 
     //Detecta triggers (como o abismo)

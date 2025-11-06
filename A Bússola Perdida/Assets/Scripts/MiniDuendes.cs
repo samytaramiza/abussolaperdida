@@ -51,7 +51,8 @@ public class miniDuende : MonoBehaviour
             // Causa dano se passou tempo suficiente desde o último
             if (Time.time >= tempoProximoDano)
             {
-                PlayerVida jogador = collision.gameObject.GetComponent<PlayerVida>();
+                PlayerVida jogador = collision.collider.GetComponentInParent<PlayerVida>();
+
                 if (jogador != null)
                 {
                     jogador.TomarDano(dano);
@@ -72,3 +73,4 @@ public class miniDuende : MonoBehaviour
     }
 
 }
+

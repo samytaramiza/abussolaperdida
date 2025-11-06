@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 16a856f1ed859c144b33927a3f5ed4c2
+guid: d1047c6bfae983cddb20a5dd25f05417
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -405058773514333122
-    second: "Inspira\xE7\xE3o background 2_0"
+      213: -7967433161660569594
+    second: Armature_animtion0_02_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Inspira\xE7\xE3o background 2_0"
+      name: Armature_animtion0_02_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1536
-        height: 1024
+        x: 55
+        y: 13
+        width: 726
+        height: 1183
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e34d58b0131f06af0800000000000000
-      internalID: -405058773514333122
+      spriteID: 608ed83b0cdfd6190800000000000000
+      internalID: -7967433161660569594
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Inspira\xE7\xE3o background 2_0": -405058773514333122
+      Armature_animtion0_02_0: -7967433161660569594
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
