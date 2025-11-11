@@ -11643,6 +11643,10 @@ PrefabInstance:
       value: PlataformaParada
       objectReference: {fileID: 0}
     - target: {fileID: 2519837541893832544, guid: 6d1fec048c929eb8bb1a99979e753249, type: 3}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2519837541893832544, guid: 6d1fec048c929eb8bb1a99979e753249, type: 3}
       propertyPath: m_TagString
       value: Untagged
       objectReference: {fileID: 0}
