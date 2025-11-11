@@ -1,34 +1,37 @@
 using UnityEngine;
 
-public class ParallaxComPlayer : MonoBehaviour
+public class Parallax : MonoBehaviour
 {
-    private float comprimentoSprite;   // Largura do sprite do fundo
-    private float posicaoInicialX;     // Posição inicial no eixo X
-    private Transform cameraTransform; // Referência à câmera (ou player)
-    public float efeitoParallax;       // Intensidade do efeito (quanto menor, mais distante o fundo parece)
-    
+    private float length;        // Largura do sprite de fundo
+    private float startPos;      // Posição inicial no eixo X
+    public GameObject player;    // Referência ao jogador
+    public float parallaxSpeed;  // Velocidade do efeito (camadas distantes = valores menores)
+
+    private float lastPlayerX;   // Última posição X registrada do player
+
     void Start()
     {
-        posicaoInicialX = transform.position.x;
-        comprimentoSprite = GetComponent<SpriteRenderer>().bounds.size.x;
-
-        // Pega a câmera principal (pode trocar pelo player se preferir)
-        cameraTransform = Camera.main.transform;
+        startPos = transform.position.x;
+        length = GetComponent<SpriteRenderer>().bounds.size.x;
+        lastPlayerX = player.transform.position.x;
     }
 
     void Update()
     {
-        // Movimento relativo da câmera
-        float distancia = cameraTransform.position.x * efeitoParallax;
+        // Calcula o quanto o player se moveu desde o último frame
+        float deltaX = player.transform.position.x - lastPlayerX;
+        lastPlayerX = player.transform.position.x;
 
-        // Atualiza a posição do fundo
-        transform.position = new Vector3(posicaoInicialX + distancia, transform.position.y, transform.position.z);
+        // Move o fundo proporcionalmente ao movimento do player
+        transform.position += Vector3.right * (deltaX * parallaxSpeed);
 
-        // Faz o looping do fundo (caso precise cenário infinito)
-        float repeticao = cameraTransform.position.x * (1 - efeitoParallax);
-        if (repeticao > posicaoInicialX + comprimentoSprite)
-            posicaoInicialX += comprimentoSprite;
-        else if (repeticao < posicaoInicialX - comprimentoSprite)
-            posicaoInicialX -= comprimentoSprite;
+        // Calcula a posição relativa do fundo ao player
+        float temp = player.transform.position.x * (1 - parallaxSpeed);
+
+        // Cria o loop quando o player ultrapassa o tamanho do sprite
+        if (temp > startPos + length) startPos += length;
+        else if (temp < startPos - length) startPos -= length;
+
+        transform.position = new Vector3(startPos + temp * parallaxSpeed, transform.position.y, transform.position.z);
     }
 }

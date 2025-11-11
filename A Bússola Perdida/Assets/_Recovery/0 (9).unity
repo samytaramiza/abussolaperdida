@@ -165,8 +165,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1436f6647f60c1429a4ad741430954c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
-  player: {fileID: 765146364}
-  parallaxSpeed: 0.35
+  efeitoParallax: 0.35
+  suavizacao: 1
 --- !u!1 &34290846
 GameObject:
   m_ObjectHideFlags: 0
@@ -193,7 +193,7 @@ Transform:
   m_GameObject: {fileID: 34290846}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.1259, y: -4.6116967, z: 0}
+  m_LocalPosition: {x: 18.1359, y: -4.6116967, z: 0}
   m_LocalScale: {x: 0.29075214, y: 0.28835878, z: 0.28835878}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6502,8 +6502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1436f6647f60c1429a4ad741430954c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
-  player: {fileID: 765146364}
-  parallaxSpeed: 0.1
+  efeitoParallax: 0.1
+  suavizacao: 1
 --- !u!1 &500022140
 GameObject:
   m_ObjectHideFlags: 0
@@ -8308,7 +8308,7 @@ Transform:
   m_GameObject: {fileID: 734777662}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.072803, y: -4.2425942, z: 0}
+  m_LocalPosition: {x: 18.082804, y: -4.2425942, z: 0}
   m_LocalScale: {x: 0.28935054, y: 0.27716202, z: 0.27716202}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12803,8 +12803,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1436f6647f60c1429a4ad741430954c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
-  player: {fileID: 0}
-  parallaxSpeed: 0
+  efeitoParallax: 0.5
+  suavizacao: 1
 --- !u!1 &1731276035
 GameObject:
   m_ObjectHideFlags: 0
@@ -13871,7 +13871,7 @@ Transform:
   m_GameObject: {fileID: 1959141545}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.09, y: -4.2399964, z: 0}
+  m_LocalPosition: {x: 18.1, y: -4.2399964, z: 0}
   m_LocalScale: {x: 0.2892958, y: 0.28981295, z: 1.2559}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16131,8 +16131,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1436f6647f60c1429a4ad741430954c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
-  player: {fileID: 0}
-  parallaxSpeed: 0.5
+  efeitoParallax: 0.5
+  suavizacao: 1
 --- !u!1 &2071383247
 GameObject:
   m_ObjectHideFlags: 0
