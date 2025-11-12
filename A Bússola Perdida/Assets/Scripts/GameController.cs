@@ -1,6 +1,6 @@
-using UnityEngine; //Biblioteca principal do Unity
-using TMPro; //Necessária para usar TextMeshPro (TMP_Text)
-using UnityEngine.SceneManagement; //Necessária para trocar de cena
+using UnityEngine; 
+using TMPro; 
+using UnityEngine.SceneManagement; 
 using UnityEngine.UI;
 using System;
 public class GameController : MonoBehaviour
@@ -13,17 +13,19 @@ public class GameController : MonoBehaviour
     public TMP_Text scoreTextPocoes; //Texto UI para exibir a quantidade de poções
 
     //Pontuação de Moedas
-    public int totalScoreRosas;     //Guarda a quantidade total de moedas coletadas
+    public int totalScoreRosas; //Guarda a quantidade total de moedas coletadas
     public TMP_Text scoreTextRosas; //Texto UI para exibir a quantidade de moedas
 
     //Instância estática para acesso fácil a este controlador de qualquer outro script
     public static GameController instance;
 
-    //Referência ao painel de Game Over (UI)
-    public GameObject gameOver;
-    public GameObject imagePocao;
-    public GameObject imageRosa;
-    public GameObject barraDeVida;
+    public GameObject gameOver; //Referência ao painel de Game Over (UI)
+    public GameObject imagePocao; //Referência a imagem da Poção
+
+    public GameObject imageRosa; //Referência a imagem da Rosa dos Ventos
+
+    public GameObject barraDeVida; //Referência a Barra de Vida
+
 
     void Awake()
     {

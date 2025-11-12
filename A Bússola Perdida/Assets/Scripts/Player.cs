@@ -16,9 +16,9 @@ public class Player : MonoBehaviour
     public bool doubleJump; //controla se o jogador pode dar um segundo pulo
 
     // Componentes
-    private AudioSource sound; //(não usado ainda) para sons
-    private Rigidbody2D rig; // corpo físico do jogador
-    private Animator anim; // animações 
+    private AudioSource sound; //para sons
+    private Rigidbody2D rig; //corpo físico do jogador
+    private Animator anim; //animações 
 
     void Start()
     {

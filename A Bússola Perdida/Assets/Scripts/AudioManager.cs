@@ -90,7 +90,7 @@ public class AudioManager : MonoBehaviour
         efeitosSource.PlayOneShot(jumpSound);
     }
 
-    public void PlayAudioMoeda()
+    public void PlayAudioCoin()
     {
         efeitosSource.PlayOneShot(coinSound);
     }

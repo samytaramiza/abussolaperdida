@@ -2,36 +2,58 @@ using UnityEngine;
 
 public class Parallax : MonoBehaviour
 {
-    private float length;        // Largura do sprite de fundo
-    private float startPos;      // Posição inicial no eixo X
-    public GameObject player;    // Referência ao jogador
-    public float parallaxSpeed;  // Velocidade do efeito (camadas distantes = valores menores)
+    public float efeitoParallax = 0.5f; // 0 = mais distante, 1 = acompanha a câmera
+    public float suavizacao = 1f;       // Suaviza o movimento do fundo (opcional)
 
-    private float lastPlayerX;   // Última posição X registrada do player
+    private Transform cam;              // Referência à câmera principal
+    private Vector3 ultimaPosCam;       // Guarda a posição anterior da câmera
+
+    private Transform[] camadas;        // Array com as duas imagens do fundo
+    private float tamanhoSprite;        // Largura da imagem
 
     void Start()
     {
-        startPos = transform.position.x;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
-        lastPlayerX = player.transform.position.x;
+        cam = Camera.main.transform;
+        ultimaPosCam = cam.position;
+
+        // Obtém todas as camadas (filhas do objeto)
+        camadas = new Transform[transform.childCount];
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            camadas[i] = transform.GetChild(i);
+        }
+
+        // Usa a largura do sprite para saber quando reposicionar
+        SpriteRenderer sr = camadas[0].GetComponent<SpriteRenderer>();
+        if (sr != null)
+            tamanhoSprite = sr.bounds.size.x;
     }
 
-    void Update()
+    void LateUpdate()
     {
-        // Calcula o quanto o player se moveu desde o último frame
-        float deltaX = player.transform.position.x - lastPlayerX;
-        lastPlayerX = player.transform.position.x;
+        // Calcula o quanto a câmera se moveu
+        float deltaX = (cam.position.x - ultimaPosCam.x) * efeitoParallax;
 
-        // Move o fundo proporcionalmente ao movimento do player
-        transform.position += Vector3.right * (deltaX * parallaxSpeed);
+        // Move o fundo suavemente
+        transform.position -= new Vector3(deltaX, 0, 0);
 
-        // Calcula a posição relativa do fundo ao player
-        float temp = player.transform.position.x * (1 - parallaxSpeed);
+        ultimaPosCam = cam.position;
 
-        // Cria o loop quando o player ultrapassa o tamanho do sprite
-        if (temp > startPos + length) startPos += length;
-        else if (temp < startPos - length) startPos -= length;
+        // Verifica se a câmera passou do ponto de loop
+        foreach (Transform camada in camadas)
+        {
+            float distCam = cam.position.x - camada.position.x;
 
-        transform.position = new Vector3(startPos + temp * parallaxSpeed, transform.position.y, transform.position.z);
+            // Se a câmera ultrapassou a borda direita da imagem
+            if (distCam > tamanhoSprite)
+            {
+                camada.position += new Vector3(tamanhoSprite * camadas.Length, 0, 0);
+            }
+            // Se voltou pra esquerda (caso o player retorne)
+            else if (distCam < -tamanhoSprite)
+            {
+                camada.position -= new Vector3(tamanhoSprite * camadas.Length, 0, 0);
+            }
+        }
     }
 }

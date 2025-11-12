@@ -29,7 +29,7 @@ public class rosaDosVentos : MonoBehaviour
             //Adiciona a quantidade de pontos ao total de moedas/pontos do jogador
             GameController.instance.AddRosa(scoreRosa);
 
-            AudioManager.Instance.PlayAudioMoeda();
+            AudioManager.Instance.PlayAudioCoin();
 
             //Destroi o objeto após um pequeno delay, permitindo efeitos visuais ou sons
             Destroy(gameObject, 0.3f);
