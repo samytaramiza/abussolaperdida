@@ -1,10 +1,11 @@
 using UnityEngine.SceneManagement; 
 using UnityEngine.UI;
 using UnityEngine;
+
 public class PontoPasseLevel : MonoBehaviour
 {
-    //Nome da próxima fase (definido no Inspector)
-    public string nextLvlName;
+    //Próxima cena
+    //public string menuFases;
 
     //Define se esta é a última fase do jogo.
     //Se for TRUE, ao chegar aqui, o jogador vence o jogo.
@@ -56,8 +57,20 @@ public class PontoPasseLevel : MonoBehaviour
             }
             else
             {
-                //Se NÃO for a última fase, carrega a próxima cena com base no nome definido.
-                SceneManager.LoadScene(nextLvlName);
+                //Sistema de desbloqueio de fase
+                // Recupera a fase atual liberada (por padrão é 1)
+                int faseLiberada = PlayerPrefs.GetInt("faseLiberada", 1);
+
+                //Se a próxima fase ainda não estiver liberada, libera agora
+                //(evita liberar além da 4ª fase)
+                if (faseLiberada < 4)
+                {
+                    PlayerPrefs.SetInt("faseLiberada", faseLiberada + 1);
+                    PlayerPrefs.Save();
+                }
+
+                //Depois de salvar o progresso, carrega a próxima fase
+                SceneManager.LoadScene("menuFases");
             }
         }
     }
