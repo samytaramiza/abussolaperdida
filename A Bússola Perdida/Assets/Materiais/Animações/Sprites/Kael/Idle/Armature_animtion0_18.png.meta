@@ -103,10 +103,10 @@ TextureImporter:
       name: Armature_animtion0_18_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 8
-        width: 528
-        height: 1193
+        x: 48
+        y: 1
+        width: 565
+        height: 1182
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

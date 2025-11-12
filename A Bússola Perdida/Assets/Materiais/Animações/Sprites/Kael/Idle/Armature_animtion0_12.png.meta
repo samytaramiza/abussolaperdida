@@ -5,9 +5,6 @@ TextureImporter:
   - first:
       213: -5542467529139678540
     second: Armature_animtion0_12_0
-  - first:
-      213: -553506618521778235
-    second: Armature_animtion0_12_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,10 +103,10 @@ TextureImporter:
       name: Armature_animtion0_12_0
       rect:
         serializedVersion: 2
-        x: 48
-        y: 610
-        width: 6
-        height: 6
+        x: 49
+        y: 0
+        width: 562
+        height: 1181
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -120,28 +117,6 @@ TextureImporter:
       bones: []
       spriteID: 4b21e72c5233513b0800000000000000
       internalID: -5542467529139678540
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Armature_animtion0_12_1
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 3
-        width: 525
-        height: 1192
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5c78e2eb9ac8158f0800000000000000
-      internalID: -553506618521778235
       vertices: []
       indices: 
       edges: []
@@ -161,7 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Armature_animtion0_12_0: -5542467529139678540
-      Armature_animtion0_12_1: -553506618521778235
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

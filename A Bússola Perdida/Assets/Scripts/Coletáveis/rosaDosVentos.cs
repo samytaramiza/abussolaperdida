@@ -4,7 +4,7 @@ public class rosaDosVentos : MonoBehaviour
 {
     //Componentes do objeto
     private SpriteRenderer sr; //Para habilitar/desabilitar a imagem da rosa dos ventos
-    private CircleCollider2D circle; // Collider usado para detectar colisão com o jogador
+    private CircleCollider2D circle; //Collider usado para detectar colisão com o jogador
 
     //Quantidade de pontos que a rosa dos ventos dá ao jogador
     public int scoreRosa = 1;

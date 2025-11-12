@@ -2,62 +2,75 @@ using UnityEngine;
 
 public class PauseManager : MonoBehaviour
 {
-    public static PauseManager Instance; // Singleton
+    public static PauseManager Instance; //Implementa o padrão Singleton (permite acesso global)
 
     [Header("Painel de Configurações")]
-    public GameObject panelConfig; // painel de configurações
+    public GameObject panelConfig; //Referência ao painel de configurações (Canvas que aparece quando pausa)
 
-    private bool isPause; // controla o estado de pausa
+    private bool isPause; //Controla se o jogo está pausado (true) ou não (false)
 
     void Awake()
     {
-        // Garante que só exista um PauseManager na cena
+        // Garante que exista apenas uma instância de PauseManager na cena
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // mantém o objeto entre cenas
+            DontDestroyOnLoad(gameObject); //Mantém o objeto entre mudanças de cena
         }
         else
         {
-            Destroy(gameObject); // evita duplicatas
+            Destroy(gameObject); //Evita duplicatas quando uma nova cena carrega
             return;
         }
     }
 
     void Start()
     {
-        // garantir que o painel comece desligado
-        if (panelConfig != null){
+        //Garante que o painel de configurações comece desativado
+        if (panelConfig != null)
+        {
             panelConfig.SetActive(false);
         }
     }
 
+    //Método responsável por PAUSAR o jogo
     void Pause()
     {
-        Time.timeScale = 0; // congela o jogo
+        Time.timeScale = 0; //Congela todo o tempo do jogo (paralisa movimentos, animações, etc.)
+
+        //Ativa o painel de configurações, se existir
         if (panelConfig != null)
             panelConfig.SetActive(true);
 
-        Cursor.lockState = CursorLockMode.None; // libera mouse
+        //Libera o cursor para o jogador poder usar o menu
+        Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
 
+    //Método responsável por DESPAUSAR o jogo
     void UnPause()
     {
-        Time.timeScale = 1; // volta o tempo
+        Time.timeScale = 1; //Retorna o tempo do jogo ao normal
+
+        //Esconde o painel de configurações, se existir
         if (panelConfig != null)
             panelConfig.SetActive(false);
 
-        Cursor.lockState = CursorLockMode.Locked; // trava mouse (opcional)
+        //Opcional: trava o cursor novamente (caso o jogo use controle de câmera, FPS, etc.)
+        Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
 
+    //Detecta quando o jogador aperta uma tecla para pausar/despausar
     void Update()
     {
+        //Se o jogador pressionar "P" ou "Esc"
         if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape))
         {
+            //Inverte o estado da pausa (toggle)
             isPause = !isPause;
 
+            //Se estiver pausado, chama Pause(); senão, UnPause()
             if (isPause)
                 Pause();
             else
@@ -65,9 +78,9 @@ public class PauseManager : MonoBehaviour
         }
     }
 
-    // Chamado pelo botão "Voltar"
+    //Método chamado pelo botão "Voltar" no painel de pausa/configuração
     public void OnVoltarButton()
     {
-        UnPause();
+        UnPause(); // Retoma o jogo
     }
 }

@@ -1,55 +1,62 @@
-using UnityEngine.SceneManagement; // Necessária para trocar de cenas no jogo
+using UnityEngine.SceneManagement; 
 using UnityEngine.UI;
-using UnityEngine; // Biblioteca principal do Unity (acesso a componentes, objetos, etc.)
-
-
+using UnityEngine;
 public class PontoPasseLevel : MonoBehaviour
 {
-    //
+    //Nome da próxima fase (definido no Inspector)
     public string nextLvlName;
 
-    // Definida como TRUE na última fase
+    //Define se esta é a última fase do jogo.
+    //Se for TRUE, ao chegar aqui, o jogador vence o jogo.
     public bool ultimaFase = false;
 
-    // Referência ao painel/canvas com a mensagem de vitória
+    //Referência ao painel (Canvas) que exibe a mensagem de vitória.
     public GameObject PanelVictory; 
+
+    //Referências aos objetos de pontuação na tela.
     public GameObject scorePocao;
     public GameObject scoreRosa;
 
+    //Referências às imagens dos ícones de poção e rosa.
     public Image imgPocao;
     public Image imgRosa;
 
-    // Chamado automaticamente quando outro Collider2D entra na área marcada como "Is Trigger"
+    //Este método é chamado automaticamente quando outro objeto com Collider2D entra
+    //na área marcada como "Is Trigger" deste GameObject.
     void OnTriggerEnter2D(Collider2D collider)
     {
-        // Verifica se o objeto que entrou no trigger tem a tag "Player"
+        //Verifica se o objeto que entrou no trigger é o jogador (tag "Player").
         if (collider.CompareTag("Player"))
         {
-            // Se esta for a última fase
+            //Se for a última fase...
             if (ultimaFase)
             {
-                // Ativa o painel de vitória, se ele estiver configurado no Inspector
-                if (PanelVictory != null){
+                //Mostra o painel de vitória (se tiver sido atribuído no Inspector).
+                if (PanelVictory != null)
+                {
                     PanelVictory.SetActive(true);
-                    
                 }
 
-                if(imgPocao != null && imgRosa != null){
+                //Esconde as imagens da poção e da rosa, se existirem.
+                if (imgPocao != null && imgRosa != null)
+                {
                     imgPocao.enabled = false;
                     imgRosa.enabled = false;
                 }
 
-                if(scorePocao && scoreRosa != null){
+                //Desativa os objetos de pontuação (texto, ícones, etc.), se existirem.
+                if (scorePocao && scoreRosa != null)
+                {
                     scorePocao.SetActive(false);
                     scoreRosa.SetActive(false);
                 }
 
-                // Pausa o jogo para o jogador poder ver a mensagem sem que a ação continue
+                //Pausa o jogo completamente para que o jogador veja a mensagem de vitória.
                 Time.timeScale = 0f;
             }
             else
             {
-                // Caso não seja a última fase, carrega a próxima cena
+                //Se NÃO for a última fase, carrega a próxima cena com base no nome definido.
                 SceneManager.LoadScene(nextLvlName);
             }
         }

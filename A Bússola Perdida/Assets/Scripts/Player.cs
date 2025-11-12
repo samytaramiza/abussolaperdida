@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     public bool isJumping; //true = no ar, false = no chão
     public bool doubleJump; //controla se o jogador pode dar um segundo pulo
 
-    // Componentes
+    //Componentes
     private AudioSource sound; //para sons
     private Rigidbody2D rig; //corpo físico do jogador
     private Animator anim; //animações 

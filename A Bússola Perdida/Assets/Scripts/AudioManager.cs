@@ -3,101 +3,104 @@ using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
+    //Instância estática (padrão Singleton)
+    //Garante que exista apenas um AudioManager acessível globalmente
     public static AudioManager Instance;
 
     [Header("Sliders de Volume")]
-    //SerializeFiel - se usa quando o atribute deve ser privado, mas aparacer no editor
+    // SerializeField] → permite editar no Inspector mesmo sendo privado
     [SerializeField] private Slider sliderMusica;
     [SerializeField] private Slider sliderEfeitos;
 
     [Header("Efeitos Sonoros")]
+    //Clipes de áudio que serão tocados em eventos específicos do jogo
     public AudioClip jumpSound;
     public AudioClip coinSound;
     public AudioClip potionSound;
 
     [Header("Fontes de Áudio")]
+    //Fontes que reproduzem os sons
     public AudioSource musicaSource;
     public AudioSource efeitosSource;
 
     void Awake()
     {
-        // Garante que só exista um AudioManager
+        //SINGLETON
+        // Garante que só exista um AudioManager ativo entre todas as cenas
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject); // não destruir entre cenas
+            DontDestroyOnLoad(gameObject); // mantém o objeto entre mudanças de cena
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // evita duplicação ao carregar nova cena
             return;
         }
-
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (efeitosSource == null){
+        //Se o efeitosSource não for definido manualmente, tenta pegar o componente
+        if (efeitosSource == null)
             efeitosSource = GetComponent<AudioSource>();
-        }
-               
-        //Carrega os volumes salvos
+
+        //CARREGA VOLUMES SALVOS
+        //Usa PlayerPrefs para guardar as preferências de som entre sessões
         float volMusica = PlayerPrefs.GetFloat("volMusica", 1);
         float volEfeitos = PlayerPrefs.GetFloat("volEfeitos", 1);
 
-
-        if(musicaSource != null){
+        // Aplica os volumes às fontes (caso existam)
+        if (musicaSource != null)
             musicaSource.volume = volMusica;
-        }
 
-        if(efeitosSource != null){
+        if (efeitosSource != null)
             efeitosSource.volume = volEfeitos;
-        }
 
-        //Atualiza sliders, se existirem
-        if(sliderMusica != null){
+        //ATUALIZA SLIDERS
+        if (sliderMusica != null)
             sliderMusica.value = volMusica;
-        }
 
-        if(sliderEfeitos != null){
+        if (sliderEfeitos != null)
             sliderEfeitos.value = volEfeitos;
-        }
     }
 
-    //Chamado pelo slider de musica
+    //FUNÇÕES PARA OS SLIDERS
+    //Atualiza o volume da música e salva a preferência
     public void ChangeVolumeMusica()
     {
-        if(musicaSource != null){
+        if (musicaSource != null)
+        {
             musicaSource.volume = sliderMusica.value;
             PlayerPrefs.SetFloat("volMusica", sliderMusica.value);
         }
     }
 
-    //Chamado pelo slider de efeitos
+    //Atualiza o volume dos efeitos sonoros e salva a preferência
     public void ChangeVolumeEfeitos()
     {
-        if(efeitosSource != null){
+        if (efeitosSource != null)
+        {
             efeitosSource.volume = sliderEfeitos.value;
             PlayerPrefs.SetFloat("volEfeitos", sliderEfeitos.value);
         }
     }
 
+    //FUNÇÕES DE REPRODUÇÃO DE SOM
+    //Usadas por outros scripts ao chamar: AudioManager.Instance.PlayJump();
 
-    // Efeitos Sonoros
     public void PlayJump()
     {
-        efeitosSource.PlayOneShot(jumpSound);
+        efeitosSource.PlayOneShot(jumpSound); //reproduz o som de pulo
     }
 
     public void PlayAudioCoin()
     {
-        efeitosSource.PlayOneShot(coinSound);
+        efeitosSource.PlayOneShot(coinSound); //som de pegar moeda
     }
 
     public void PlayAudioPotion()
     {
-        efeitosSource.PlayOneShot(potionSound);
+        efeitosSource.PlayOneShot(potionSound); //som de pegar poção
     }
-
 }

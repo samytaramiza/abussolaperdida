@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TelaInicial.unity
     guid: 6891cc82d0218a6418722ad32af158bb
   - enabled: 1
+    path: Assets/Scenes/MenuFases.unity
+    guid: ff54915641f515eb0ab2e32ff7ea46ec
+  - enabled: 1
     path: Assets/Scenes/Fase1.unity
     guid: 30fe77c1325d5162988508c88acda029
   - enabled: 1

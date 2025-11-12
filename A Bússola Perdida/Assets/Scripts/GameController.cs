@@ -3,94 +3,103 @@ using TMPro;
 using UnityEngine.SceneManagement; 
 using UnityEngine.UI;
 using System;
+
 public class GameController : MonoBehaviour
 {
-    public BarraDeVida barra;
-    private float vida = 100;
+    //VIDA DO JOGADOR
+    public BarraDeVida barra; //Referência à barra de vida na UI
+    private float vida = 100; //Vida atual do jogador
 
-    //Pontuação de Poções
-    public int totalScorePocoes; //Guarda a quantidade total de poções coletadas
-    public TMP_Text scoreTextPocoes; //Texto UI para exibir a quantidade de poções
+    //PONTUAÇÃO DE POÇÕES
+    public int totalScorePocoes; //Total de poções coletadas
+    public TMP_Text scoreTextPocoes; //Texto UI que exibe o total de poções
 
-    //Pontuação de Moedas
-    public int totalScoreRosas; //Guarda a quantidade total de moedas coletadas
-    public TMP_Text scoreTextRosas; //Texto UI para exibir a quantidade de moedas
+    //PONTUAÇÃO DE ROSAS
+    public int totalScoreRosas; //Total de “rosas dos ventos” (ou moedas)
+    public TMP_Text scoreTextRosas; //Texto UI que exibe o total de rosas
 
-    //Instância estática para acesso fácil a este controlador de qualquer outro script
+    //SINGLETON
+    //Facilita o acesso global: GameController.instance
     public static GameController instance;
 
-    public GameObject gameOver; //Referência ao painel de Game Over (UI)
-    public GameObject imagePocao; //Referência a imagem da Poção
-
-    public GameObject imageRosa; //Referência a imagem da Rosa dos Ventos
-
-    public GameObject barraDeVida; //Referência a Barra de Vida
+    //ELEMENTOS DE INTERFACE
+    public GameObject gameOver; //Painel de Game Over
+    public GameObject imagePocao; //Ícone da poção (UI)
+    public GameObject imageRosa; //Ícone da rosa dos ventos (UI)
+    public GameObject barraDeVida; //Objeto da barra de vida (UI)
 
 
     void Awake()
     {
+        //Define a instância global ao iniciar
         instance = this;
     }
 
-    //Chamado quando o jogo começa
     void Start()
     {
-        // Inicializa a barra com vida cheia
+        //Inicializa a barra de vida no início do jogo
         barra.SetMaxVida(100);
     }
 
-
-    // Atualiza os textos na UI com os valores atuais de poções e moedas
+    //ATUALIZAÇÃO DE PONTUAÇÃO
     public void UpdateScoreText()
     {
-        //Converte número para string e mostra
+        //Converte os valores numéricos em texto para exibir na UI
         scoreTextPocoes.text = totalScorePocoes.ToString();
         scoreTextRosas.text = totalScoreRosas.ToString();
     }
 
-    //Exibe o painel de Game Over
+    //GAME OVER
     public void ShowGameOver()
     {
-        //Ativa o objeto na cena
+        //Ativa o painel de Game Over e oculta os elementos da HUD
         gameOver.SetActive(true);
         imagePocao.SetActive(false);
         imageRosa.SetActive(false);
         barraDeVida.SetActive(false);
     }
 
-    //Reinicia a fase, recebendo o nome da cena como parâmetro
+    //REINICIAR FASE
     public void Reiniciar(string faseNome)
     {
-        //Carrega a cena com o nome informado
+        //Recarrega a cena atual ou uma cena específica
         SceneManager.LoadScene(faseNome);
     }
 
+    //ALTERAÇÃO DE VIDA
     public void AlterarVida(float quantidade)
     {
+        //Aumenta ou reduz a vida, garantindo que fique entre 0 e 100
         vida = Mathf.Clamp(vida + quantidade, 0f, 100f);
+
+        //Atualiza a barra de vida visualmente
         barra.GerenciarVida(vida);
 
-        if (vida > 0)
+        //Se a vida acabar, exibe Game Over
+        if (vida <= 0)
         {
-            return;
+            ShowGameOver();
         }
-        ShowGameOver();
     }
 
+    //ADICIONAR ROSA (OU MOEDA)
     public void AddRosa(int quantidade)
     {
+        //Soma a quantidade coletada
         totalScoreRosas += quantidade;
+
+        //Atualiza o texto da UI
         UpdateScoreText();
 
+        //A cada 10 rosas coletadas, recupera 10 pontos de vida (até o máximo de 100)
         if (totalScoreRosas % 10 == 0 && vida < 100)
         {
-            AlterarVida(10f); 
+            AlterarVida(10f);
         }
     }
 
     void Update()
     {
-        
+        //Espaço para futuras lógicas de atualização contínua
     }
-
 }
