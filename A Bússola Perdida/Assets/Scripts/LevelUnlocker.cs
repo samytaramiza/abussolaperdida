@@ -8,10 +8,10 @@ public class LevelUnlocker : MonoBehaviour
     [Serializable]
     public class Fase
     {
-        public Button botao;       // botão da fase (com imagem)
-        public GameObject cadeado; // ícone do cadeado (GameObject)
-        public string nomeCena;    // nome da cena para carregar
-        public int indice;         // 1,2,3...
+        public Button botao;
+        public GameObject cadeado;
+        public string nomeCena;
+        public int indice;
     }
 
     public Fase[] fases;
@@ -19,8 +19,8 @@ public class LevelUnlocker : MonoBehaviour
 
     void Start()
     {
-        AtualizarFases();
-        PlayerPrefs.DeleteAll();
+        // Atualiza após breve atraso, garantindo que o PlayerPrefs já tenha sido salvo
+        Invoke(nameof(AtualizarFases), 0.1f);
     }
 
     public void AtualizarFases()
@@ -33,13 +33,12 @@ public class LevelUnlocker : MonoBehaviour
             bool desbloqueada = fase.indice <= ultimaFaseLiberada;
 
             if (fase.cadeado != null)
-                fase.cadeado.SetActive(!desbloqueada);
+                fase.cadeado.SetActive(!desbloqueada); // Cadeado visível se bloqueada
 
             if (fase.botao != null)
             {
                 fase.botao.interactable = desbloqueada;
 
-                // Remove listeners antigos (evita acumular multiplos listeners)
                 fase.botao.onClick.RemoveAllListeners();
 
                 if (desbloqueada)
@@ -52,18 +51,6 @@ public class LevelUnlocker : MonoBehaviour
                     });
                 }
             }
-        }
-    }
-
-    // Método público para desbloquear até uma fase específica (ex: chamar ao fim da fase)
-    public static void DesbloquearAte(int indice)
-    {
-        int atual = PlayerPrefs.GetInt(SAVE_KEY, 1);
-        if (indice > atual)
-        {
-            PlayerPrefs.SetInt(SAVE_KEY, indice);
-            PlayerPrefs.Save();
-            Debug.Log($"[LevelUnlocker] PlayerPrefs atualizado: faseLiberada = {indice}");
         }
     }
 }

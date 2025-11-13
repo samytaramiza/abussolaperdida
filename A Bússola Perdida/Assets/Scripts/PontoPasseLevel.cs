@@ -12,14 +12,9 @@ public class PontoPasseLevel : MonoBehaviour
     public UnityEngine.UI.Image imgPocao;
     public UnityEngine.UI.Image imgRosa;
 
-    // Índice da fase atual (1 = fase1, 2 = fase2, etc.)
     public int faseAtual = 1;
-
-    // Nome da cena do menu de fases 
-    public string menuFasesSceneName = "MenuFases";
-
-    // Quantidade total de fases do jogo
     public int totalFases = 4;
+    public string menuFasesSceneName = "MenuFases";
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
@@ -35,11 +30,10 @@ public class PontoPasseLevel : MonoBehaviour
             return;
         }
 
-        // Recupera fase atual liberada
         int faseLiberada = PlayerPrefs.GetInt(SAVE_KEY, 1);
-        Debug.Log($"[PontoPasseLevel] faseLiberada atual = {faseLiberada}");
+        Debug.Log($"[PontoPasseLevel] Fase liberada atual = {faseLiberada}");
 
-        // Se o jogador terminou esta fase, libera a próxima
+        // libera a próxima fase apenas se o jogador estiver na mais recente
         if (faseLiberada == faseAtual && faseAtual < totalFases)
         {
             int nova = faseAtual + 1;
@@ -48,7 +42,13 @@ public class PontoPasseLevel : MonoBehaviour
             Debug.Log($"[PontoPasseLevel] Nova fase liberada: {nova}");
         }
 
-        // Volta ao menu de fases
+        // Garante que o valor seja gravado antes da troca de cena
+        StartCoroutine(VoltarMenu());
+    }
+
+    private System.Collections.IEnumerator VoltarMenu()
+    {
+        yield return new WaitForSeconds(0.2f);
         SceneManager.LoadScene(menuFasesSceneName);
     }
 }
