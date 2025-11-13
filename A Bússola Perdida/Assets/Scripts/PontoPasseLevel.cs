@@ -1,77 +1,54 @@
-using UnityEngine.SceneManagement; 
-using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PontoPasseLevel : MonoBehaviour
 {
-    //Próxima cena
-    //public string menuFases;
-
-    //Define se esta é a última fase do jogo.
-    //Se for TRUE, ao chegar aqui, o jogador vence o jogo.
+    private const string SAVE_KEY = "faseLiberada"; 
     public bool ultimaFase = false;
 
-    //Referência ao painel (Canvas) que exibe a mensagem de vitória.
-    public GameObject PanelVictory; 
-
-    //Referências aos objetos de pontuação na tela.
+    public GameObject PanelVictory;
     public GameObject scorePocao;
     public GameObject scoreRosa;
+    public UnityEngine.UI.Image imgPocao;
+    public UnityEngine.UI.Image imgRosa;
 
-    //Referências às imagens dos ícones de poção e rosa.
-    public Image imgPocao;
-    public Image imgRosa;
+    // Índice da fase atual (1 = fase1, 2 = fase2, etc.)
+    public int faseAtual = 1;
 
-    //Este método é chamado automaticamente quando outro objeto com Collider2D entra
-    //na área marcada como "Is Trigger" deste GameObject.
-    void OnTriggerEnter2D(Collider2D collider)
+    // Nome da cena do menu de fases 
+    public string menuFasesSceneName = "MenuFases";
+
+    // Quantidade total de fases do jogo
+    public int totalFases = 4;
+
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        //Verifica se o objeto que entrou no trigger é o jogador (tag "Player").
-        if (collider.CompareTag("Player"))
+        if (!collider.CompareTag("Player")) return;
+
+        if (ultimaFase)
         {
-            //Se for a última fase...
-            if (ultimaFase)
-            {
-                //Mostra o painel de vitória (se tiver sido atribuído no Inspector).
-                if (PanelVictory != null)
-                {
-                    PanelVictory.SetActive(true);
-                }
-
-                //Esconde as imagens da poção e da rosa, se existirem.
-                if (imgPocao != null && imgRosa != null)
-                {
-                    imgPocao.enabled = false;
-                    imgRosa.enabled = false;
-                }
-
-                //Desativa os objetos de pontuação (texto, ícones, etc.), se existirem.
-                if (scorePocao && scoreRosa != null)
-                {
-                    scorePocao.SetActive(false);
-                    scoreRosa.SetActive(false);
-                }
-
-                //Pausa o jogo completamente para que o jogador veja a mensagem de vitória.
-                Time.timeScale = 0f;
-            }
-            else
-            {
-                //Sistema de desbloqueio de fase
-                // Recupera a fase atual liberada (por padrão é 1)
-                int faseLiberada = PlayerPrefs.GetInt("faseLiberada", 1);
-
-                //Se a próxima fase ainda não estiver liberada, libera agora
-                //(evita liberar além da 4ª fase)
-                if (faseLiberada < 4)
-                {
-                    PlayerPrefs.SetInt("faseLiberada", faseLiberada + 1);
-                    PlayerPrefs.Save();
-                }
-
-                //Depois de salvar o progresso, carrega a próxima fase
-                SceneManager.LoadScene("menuFases");
-            }
+            if (PanelVictory != null) PanelVictory.SetActive(true);
+            if (imgPocao != null && imgRosa != null) { imgPocao.enabled = false; imgRosa.enabled = false; }
+            if (scorePocao != null && scoreRosa != null) { scorePocao.SetActive(false); scoreRosa.SetActive(false); }
+            Time.timeScale = 0f;
+            Debug.Log("[PontoPasseLevel] Última fase concluída!");
+            return;
         }
+
+        // Recupera fase atual liberada
+        int faseLiberada = PlayerPrefs.GetInt(SAVE_KEY, 1);
+        Debug.Log($"[PontoPasseLevel] faseLiberada atual = {faseLiberada}");
+
+        // Se o jogador terminou esta fase, libera a próxima
+        if (faseLiberada == faseAtual && faseAtual < totalFases)
+        {
+            int nova = faseAtual + 1;
+            PlayerPrefs.SetInt(SAVE_KEY, nova);
+            PlayerPrefs.Save();
+            Debug.Log($"[PontoPasseLevel] Nova fase liberada: {nova}");
+        }
+
+        // Volta ao menu de fases
+        SceneManager.LoadScene(menuFasesSceneName);
     }
 }

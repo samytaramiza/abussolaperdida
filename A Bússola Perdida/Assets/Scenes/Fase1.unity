@@ -582,6 +582,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1216503454}
     - target: {fileID: 2344514418877054366, guid: 6a8d6553df726d54983a2a264d5e5b4c, type: 3}
+      propertyPath: ultimaFase
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2344514418877054366, guid: 6a8d6553df726d54983a2a264d5e5b4c, type: 3}
       propertyPath: nextLvlName
       value: Fase2
       objectReference: {fileID: 0}
@@ -589,6 +593,10 @@ PrefabInstance:
       propertyPath: PanelVictory
       value: 
       objectReference: {fileID: 626549200}
+    - target: {fileID: 2344514418877054366, guid: 6a8d6553df726d54983a2a264d5e5b4c, type: 3}
+      propertyPath: menuFasesSceneName
+      value: MenuFases
+      objectReference: {fileID: 0}
     - target: {fileID: 3052104019146426161, guid: 6a8d6553df726d54983a2a264d5e5b4c, type: 3}
       propertyPath: m_LocalPosition.x
       value: 44.06

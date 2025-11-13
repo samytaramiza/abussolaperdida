@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: beb25dd722796bda1a89a65c0f98a833
+guid: 6be8a9df4b0c03d51bb4f260c2bc0c52
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 529195304394458202
-    second: Captura de tela de 2025-11-12 18-18-30_0
+      213: -3747171271797641982
+    second: menufase2_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Captura de tela de 2025-11-12 18-18-30_0
+      name: menufase2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 643
-        height: 454
+        y: 136
+        width: 1972
+        height: 1144
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a548c375354185700800000000000000
-      internalID: 529195304394458202
+      spriteID: 20de3f7e49f5ffbc0800000000000000
+      internalID: -3747171271797641982
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Captura de tela de 2025-11-12 18-18-30_0: 529195304394458202
+      menufase2_0: -3747171271797641982
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
