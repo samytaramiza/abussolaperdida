@@ -2,28 +2,35 @@ using UnityEngine;
 
 public class BossPower : MonoBehaviour
 {
-    //CONFIGURAÇÕES DO PODER 
-    public float lifeTime = 3f; //Tempo que o poder permanece ativo na cena antes de ser destruído
-    public GameObject hitEffect; //Efeito visual (partículas, explosão, faíscas, etc.) ao colidir com algo
+    [Header("Configurações")]
+    public float lifeTime = 3f;      // Tempo de vida do projétil
+    public float damage = 10f;       // Dano causado ao jogador
 
+    [Header("Efeito de Impacto")]
+    public GameObject hitEffect;     // Efeito ao colidir (opcional)
 
     void Start()
     {
-        //Destroi automaticamente o projétil após 'lifeTime' segundos
-        //Isso evita que o objeto fique eternamente na cena caso não colida com nada
+        // Destroi automaticamente depois de lifeTime
         Destroy(gameObject, lifeTime);
     }
 
-
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        //Quando o poder colide com algo (por exemplo, o jogador, o chão ou parede)
+        // Se colidir com o jogador
+        if (collision.CompareTag("Player"))
+        {
+            // Se o jogador tiver script de vida, aplica dano
+            PlayerVida vida = collision.GetComponent<PlayerVida>();
+            if (vida != null)
+                vida.TomarDano(damage);
+        }
 
-        //Se houver um efeito de impacto configurado, ele é criado na posição atual do poder
+        // Se houver efeito de impacto, instancie
         if (hitEffect != null)
             Instantiate(hitEffect, transform.position, Quaternion.identity);
 
-        //Destroi o poder logo após a colisão (independente de com o que colidiu)
+        // Destrói o projétil ao colidir
         Destroy(gameObject);
     }
 }
