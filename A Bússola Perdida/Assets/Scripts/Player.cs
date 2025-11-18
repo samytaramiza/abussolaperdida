@@ -15,6 +15,13 @@ public class Player : MonoBehaviour
     public bool isJumping; //true = no ar, false = no chão
     public bool doubleJump; //controla se o jogador pode dar um segundo pulo
 
+    //Ataque
+    public Transform attackPoint; //Posição do ataque (um objeto vazio na mão do player)
+    public float attackRange = 0.5f; //Raio da área que causa dano
+    public int attackDamage = 20; //Dano causado
+    public float attackCooldown = 0.3f; //Tempo entre ataques
+    private bool canAttack = true; //Controle para não atacar mil vezes por segundo
+
     //Componentes
     private AudioSource sound; //para sons
     private Rigidbody2D rig; //corpo físico do jogador
@@ -32,6 +39,7 @@ public class Player : MonoBehaviour
         //Chama as funções de movimento e pulo a cada frame
         Move();
         Jump();
+        Attack();
     }
 
     //Movimentação lateral
@@ -68,7 +76,7 @@ public class Player : MonoBehaviour
     void Jump()
     {
         //Detecta se o botão de pulo foi pressionado
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.W))
         {
             // Se está no chão
             if (!isJumping)
@@ -85,12 +93,52 @@ public class Player : MonoBehaviour
                 {
                     rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
                     doubleJump = false; //desabilita o segundo pulo
-                    //anim.SetBool("Jump", true);
+                    anim.SetBool("Jump", true);
                     AudioManager.Instance.PlayJump();  
                 }
             }
         }
     }
+
+    void Attack()
+    {
+        // Botão de ataque — você escolhe qual tecla
+        if (Input.GetButtonDown("Fire1") && canAttack)
+        {
+            // Impede spam
+            canAttack = false;
+            Invoke(nameof(ResetAttack), attackCooldown);
+
+            // Toca a animação
+            anim.SetTrigger("Attack");
+
+            // Verifica colisão
+            Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(
+                attackPoint.position,
+                attackRange
+            );
+
+            // Aplica dano em tudo que tiver um script "Enemy" ou "BossLife"
+            foreach (Collider2D enemy in hitEnemies)
+            {
+                if (enemy.GetComponent<Enemy>())
+                {
+                    enemy.GetComponent<Enemy>().TakeDamage(attackDamage);
+                }
+
+                if (enemy.GetComponent<BossLife>())
+                {
+                    enemy.GetComponent<BossLife>().TakeDamage(attackDamage);
+                }
+            }
+        }
+    }
+
+void ResetAttack()
+{
+    canAttack = true;
+}
+
 
     //Detecta colisões
     //Detecta colisões normais com chão ou perigos
@@ -110,6 +158,15 @@ public class Player : MonoBehaviour
 
     }
 
+    //Detecta quando o jogador sai do chão
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.layer == 8)
+        {
+            isJumping = true; //marca que está no ar
+        }
+    }
+
     //Detecta triggers (como o abismo)
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -120,13 +177,5 @@ public class Player : MonoBehaviour
         }
     }
 
-    //Detecta quando o jogador sai do chão
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.layer == 8)
-        {
-            isJumping = true; //marca que está no ar
-        }
-    }
 
 }
