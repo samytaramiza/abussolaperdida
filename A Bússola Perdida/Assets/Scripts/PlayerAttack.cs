@@ -3,63 +3,51 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     [Header("Referências")]
-    public Transform attackPoint; //Local onde a flecha e poção saem
-    public GameObject arrowPrefab; //Prefab da flecha
-    public GameObject potionPrefab; //Prefab da poção
+    public GameObject arrowPrefab;
+    public GameObject potionPrefab;
+    public Transform attackPoint;
+    public Animator anim;
 
-    [Header("Configurações de Ataque")]
-    public float arrowSpeed = 10f; //Velocidade da flecha
-    public float potionForce = 7f; // Força do lançamento da poção
-    public float attackCooldown = 0.5f; //Tempo entre ataques
+    [Header("Configuração")]
+    public float arrowSpeed = 12f;
+    public float potionSpeed = 8f;
+    public float attackCooldown = 0.4f;
 
-    private float cooldownTimer;
+    private float attackTimer = 0f;
 
-    private Animator anim;
-
-    private void Start()
+    void Update()
     {
-        anim = GetComponent<Animator>();
-    }
+        attackTimer += Time.deltaTime;
 
-    private void Update()
-    {
-        cooldownTimer -= Time.deltaTime;
-
-        // ATAQUE 1 — FLECHA — tecla Z
-        if (Input.GetKeyDown(KeyCode.Z) && cooldownTimer <= 0f)
+        // FLECHA - Z
+        if (Input.GetKeyDown(KeyCode.Z) && attackTimer >= attackCooldown)
         {
-            ShootArrow();
+            anim.SetTrigger("Attack");
+            Shoot(arrowPrefab, arrowSpeed);
+            attackTimer = 0f;
         }
 
-        // ATAQUE 2 — POÇÃO — tecla X
-        if (Input.GetKeyDown(KeyCode.X) && cooldownTimer <= 0f)
+        // POÇÃO - X
+        if (Input.GetKeyDown(KeyCode.X) && attackTimer >= attackCooldown)
         {
-            ThrowPotion();
+            anim.SetTrigger("Attack");
+            Shoot(potionPrefab, potionSpeed);
+            attackTimer = 0f;
         }
     }
 
-    void ShootArrow()
+    void Shoot(GameObject prefab, float speed)
     {
-        cooldownTimer = attackCooldown;
-        anim.SetTrigger("Attack");
+        if (prefab == null || attackPoint == null)
+            return;
 
-        GameObject arrow = Instantiate(arrowPrefab, attackPoint.position, attackPoint.rotation);
+        GameObject obj = Instantiate(prefab, attackPoint.position, attackPoint.rotation);
+        Rigidbody2D rb = obj.GetComponent<Rigidbody2D>();
 
-        Rigidbody2D rb = arrow.GetComponent<Rigidbody2D>();
-        rb.linearVelocity = transform.right * arrowSpeed * (transform.localScale.x > 0 ? 1 : -1);
-    }
+        // Direção baseada no lado que o player está virado
+        Vector2 direction =
+            transform.eulerAngles.y == 180f ? Vector2.left : Vector2.right;
 
-    void ThrowPotion()
-    {
-        cooldownTimer = attackCooldown;
-        anim.SetTrigger("Attack2");
-
-        GameObject potion = Instantiate(potionPrefab, attackPoint.position, attackPoint.rotation);
-
-        Rigidbody2D rb = potion.GetComponent<Rigidbody2D>();
-
-        Vector2 direction = new Vector2(transform.localScale.x > 0 ? 1 : -1, 1).normalized;
-
-        rb.AddForce(direction * potionForce, ForceMode2D.Impulse);
+        rb.linearVelocity = direction * speed;
     }
 }

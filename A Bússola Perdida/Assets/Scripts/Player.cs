@@ -10,14 +10,6 @@ public class Player : MonoBehaviour
     public bool isJumping;
     public bool doubleJump;
 
-    [Header("Ataque")]
-    public GameObject arrowPrefab;     // Prefab da flecha
-    public GameObject potionPrefab;    // Prefab da poção
-    public Transform attackPoint;      // Posição de onde os ataques saem
-    public float attackCooldown = 0.5f;
-
-    private float attackTimer;
-
     private Rigidbody2D rig;
     private Animator anim;
 
@@ -31,7 +23,6 @@ public class Player : MonoBehaviour
     {
         Move();
         Jump();
-        Attack();
     }
 
     // ---------------- MOVIMENTO ----------------
@@ -72,28 +63,6 @@ public class Player : MonoBehaviour
                 rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
                 doubleJump = false;
             }
-        }
-    }
-
-    // ---------------- ATAQUE ----------------
-    void Attack()
-    {
-        attackTimer += Time.deltaTime;
-
-        // ATAQUE 1 - Flecha (botão Z)
-        if (Input.GetKeyDown(KeyCode.Z) && attackTimer >= attackCooldown)
-        {
-            anim.SetTrigger("Attack");
-            Instantiate(arrowPrefab, attackPoint.position, attackPoint.rotation);
-            attackTimer = 0;
-        }
-
-        // ATAQUE 2 - Poção (botão X)
-        if (Input.GetKeyDown(KeyCode.X) && attackTimer >= attackCooldown)
-        {
-            anim.SetTrigger("Attack");
-            Instantiate(potionPrefab, attackPoint.position, attackPoint.rotation);
-            attackTimer = 0;
         }
     }
 
