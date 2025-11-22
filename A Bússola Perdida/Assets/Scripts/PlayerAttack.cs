@@ -10,44 +10,44 @@ public class PlayerAttack : MonoBehaviour
 
     [Header("Configuração")]
     public float arrowSpeed = 12f;
-    public float potionSpeed = 8f;
-    public float attackCooldown = 0.4f;
-
-    private float attackTimer = 0f;
+    public float potionForce = 8f;
 
     void Update()
     {
-        attackTimer += Time.deltaTime;
-
-        // FLECHA - Z
-        if (Input.GetKeyDown(KeyCode.Z) && attackTimer >= attackCooldown)
+        // ATAQUE 1: FLECHA (tecla Z)
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             anim.SetTrigger("Attack");
-            Shoot(arrowPrefab, arrowSpeed);
-            attackTimer = 0f;
+            ShootArrow();
         }
 
-        // POÇÃO - X
-        if (Input.GetKeyDown(KeyCode.X) && attackTimer >= attackCooldown)
+        // ATAQUE 2: POÇÃO (tecla X)
+        if (Input.GetKeyDown(KeyCode.X))
         {
             anim.SetTrigger("Attack");
-            Shoot(potionPrefab, potionSpeed);
-            attackTimer = 0f;
+            ThrowPotion();
         }
     }
 
-    void Shoot(GameObject prefab, float speed)
+    void ShootArrow()
     {
-        if (prefab == null || attackPoint == null)
-            return;
+        GameObject arrow = Instantiate(arrowPrefab, attackPoint.position, attackPoint.rotation);
+        Rigidbody2D rb = arrow.GetComponent<Rigidbody2D>();
 
-        GameObject obj = Instantiate(prefab, attackPoint.position, attackPoint.rotation);
-        Rigidbody2D rb = obj.GetComponent<Rigidbody2D>();
+        Vector2 dir = transform.right;
+        if (transform.eulerAngles.y == 180f) dir = -transform.right;
 
-        // Direção baseada no lado que o player está virado
-        Vector2 direction =
-            transform.eulerAngles.y == 180f ? Vector2.left : Vector2.right;
+        rb.linearVelocity = dir * arrowSpeed;
+    }
 
-        rb.linearVelocity = direction * speed;
+    void ThrowPotion()
+    {
+        GameObject potion = Instantiate(potionPrefab, attackPoint.position, attackPoint.rotation);
+        Rigidbody2D rb = potion.GetComponent<Rigidbody2D>();
+
+        Vector2 dir = transform.right;
+        if (transform.eulerAngles.y == 180f) dir = -transform.right;
+
+        rb.AddForce(new Vector2(dir.x * potionForce, 5f), ForceMode2D.Impulse);
     }
 }
