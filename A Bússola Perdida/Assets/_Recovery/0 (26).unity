@@ -1192,7 +1192,7 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: 05e7e9b2d128c971085070ce7ed419b1, type: 3}
   coinSound: {fileID: 8300000, guid: 89989cef5a69c50b096415fa738769e2, type: 3}
   potionSound: {fileID: 8300000, guid: 809201f9dcc051d88964a359192c7c9d, type: 3}
-  musicaSource: {fileID: 0}
+  musicaSource: {fileID: 2083215892}
   efeitosSource: {fileID: 1015557293}
 --- !u!4 &1015557292
 Transform:

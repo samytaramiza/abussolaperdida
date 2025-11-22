@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: 24c923fa4c606c37e9bbc4526269dd94
+guid: 485113044cd23d19388a89c0ad5c6d65
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5340360486096603091
-    second: ChatGPT Image 18 de set. de 2025, 16_57_34_0
-  - first:
-      213: -8527037046986902412
-    second: ChatGPT Image 18 de set. de 2025, 16_57_34_1
+      213: 1857820820543059913
+    second: Diamante_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChatGPT Image 18 de set. de 2025, 16_57_34_0
+      name: Diamante_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1524
-        height: 1024
+        width: 5995
+        height: 5375
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d28fdadae6a33e5b0800000000000000
-      internalID: -5340360486096603091
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChatGPT Image 18 de set. de 2025, 16_57_34_1
-      rect:
-        serializedVersion: 2
-        x: 974
-        y: 954
-        width: 27
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 474ffb3ebf0e9a980800000000000000
-      internalID: -8527037046986902412
+      spriteID: 9c73bc0713e48c910800000000000000
+      internalID: 1857820820543059913
       vertices: []
       indices: 
       edges: []
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ChatGPT Image 18 de set. de 2025, 16_57_34_0: -5340360486096603091
-      ChatGPT Image 18 de set. de 2025, 16_57_34_1: -8527037046986902412
+      Diamante_0: 1857820820543059913
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
