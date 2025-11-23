@@ -97,6 +97,13 @@ public class Player : MonoBehaviour
         }
     }
 
+    void Morrer()
+    {
+        // coloque aqui qualquer ação de game over
+        Destroy(gameObject); // ou chamar uma animação antes
+    }
+
+
     // ---------------- COLISÕES ----------------
     private void OnCollisionEnter2D(Collision2D col)
     {
@@ -114,4 +121,14 @@ public class Player : MonoBehaviour
             isJumping = true;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Abismo"))
+        {
+            Debug.Log("Player caiu no abismo");
+            Morrer();
+        }
+    }
+
 }

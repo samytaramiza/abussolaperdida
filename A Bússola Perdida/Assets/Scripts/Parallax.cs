@@ -2,58 +2,33 @@ using UnityEngine;
 
 public class Parallax : MonoBehaviour
 {
-    public float efeitoParallax = 0.5f; //0 = mais distante, 1 = acompanha a câmera
-    public float suavizacao = 1f; //Suaviza o movimento do fundo (opcional)
+    [Header("Configurações")]
+    public Transform player;   // Referência ao player
+    public float parallaxFactor = 0.5f; // 0.1 = bem lento / 0.9 = quase igual ao player
 
-    private Transform cam; //Referência à câmera principal
-    private Vector3 ultimaPosCam; //Guarda a posição anterior da câmera
-
-    private Transform[] camadas; //Array com as duas imagens do fundo
-    private float tamanhoSprite; //Largura da imagem
+    private Vector3 lastPlayerPos;
 
     void Start()
     {
-        cam = Camera.main.transform;
-        ultimaPosCam = cam.position;
-
-        //Obtém todas as camadas (filhas do objeto)
-        camadas = new Transform[transform.childCount];
-        for (int i = 0; i < transform.childCount; i++)
+        if (player == null)
         {
-            camadas[i] = transform.GetChild(i);
+            Debug.LogWarning("Parallax: Player não atribuído!");
+            enabled = false;
+            return;
         }
 
-        //Usa a largura do sprite para saber quando reposicionar
-        SpriteRenderer sr = camadas[0].GetComponent<SpriteRenderer>();
-        if (sr != null)
-            tamanhoSprite = sr.bounds.size.x;
+        lastPlayerPos = player.position;
     }
 
-    void LateUpdate()
+    void Update()
     {
-        //Calcula o quanto a câmera se moveu
-        float deltaX = (cam.position.x - ultimaPosCam.x) * efeitoParallax;
+        // Diferença que o player se moveu desde o último frame
+        Vector3 playerDelta = player.position - lastPlayerPos;
 
-        //Move o fundo suavemente
-        transform.position -= new Vector3(deltaX, 0, 0);
+        // Move o background apenas na horizontal
+        transform.position += new Vector3(playerDelta.x * parallaxFactor, 0f, 0f);
 
-        ultimaPosCam = cam.position;
-
-        //Verifica se a câmera passou do ponto de loop
-        foreach (Transform camada in camadas)
-        {
-            float distCam = cam.position.x - camada.position.x;
-
-            //Se a câmera ultrapassou a borda direita da imagem
-            if (distCam > tamanhoSprite)
-            {
-                camada.position += new Vector3(tamanhoSprite * camadas.Length, 0, 0);
-            }
-            //Se voltou pra esquerda (caso o player retorne)
-            else if (distCam < -tamanhoSprite)
-            {
-                camada.position -= new Vector3(tamanhoSprite * camadas.Length, 0, 0);
-            }
-        }
+        // Atualiza referência
+        lastPlayerPos = player.position;
     }
 }
