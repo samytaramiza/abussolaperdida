@@ -2,13 +2,25 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int life = 100;
+    public float vida = 20f;
+    public GameObject deathParticles; // particulas de desintegração
 
-    public void TakeDamage(int amount)
+    public void LevarDano(float dano)
     {
-        life -= amount;
+        vida -= dano;
 
-        if (life <= 0)
-            Destroy(gameObject);
+        if (vida <= 0)
+        {
+            Morrer();
+        }
+    }
+
+    void Morrer()
+    {
+        // Instancia as partículas
+        if (deathParticles != null)
+            Instantiate(deathParticles, transform.position, Quaternion.identity);
+
+        Destroy(gameObject); // destrói o inimigo
     }
 }

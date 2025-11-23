@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -10,6 +9,12 @@ public class Player : MonoBehaviour
     public bool isJumping;
     public bool doubleJump;
 
+    [Header("Ataque")]
+    public GameObject potionPrefab;
+    public Transform attackPoint;
+    public float attackCooldown = 0.5f;
+
+    private float attackTimer;
     private Rigidbody2D rig;
     private Animator anim;
 
@@ -23,23 +28,24 @@ public class Player : MonoBehaviour
     {
         Move();
         Jump();
+        Attack();
     }
 
     // ---------------- MOVIMENTO ----------------
     void Move()
     {
-        Vector3 moviment = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
-        transform.position += moviment * Time.deltaTime * Speed;
+        float h = Input.GetAxis("Horizontal");
+        transform.position += new Vector3(h, 0, 0) * Speed * Time.deltaTime;
 
-        if (Input.GetAxis("Horizontal") > 0f)
+        if (h > 0)
         {
             anim.SetBool("Walk", true);
-            transform.eulerAngles = new Vector3(0f, 0f, 0f);
+            transform.eulerAngles = Vector3.zero;
         }
-        else if (Input.GetAxis("Horizontal") < 0f)
+        else if (h < 0)
         {
             anim.SetBool("Walk", true);
-            transform.eulerAngles = new Vector3(0f, 180f, 0f);
+            transform.eulerAngles = new Vector3(0, 180, 0);
         }
         else
         {
@@ -54,47 +60,58 @@ public class Player : MonoBehaviour
         {
             if (!isJumping)
             {
-                rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
+                rig.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
+                isJumping = true;
                 doubleJump = true;
                 anim.SetBool("Jump", true);
             }
             else if (doubleJump)
             {
-                rig.AddForce(new Vector2(0f, JumpForce), ForceMode2D.Impulse);
+                rig.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
                 doubleJump = false;
             }
         }
     }
 
-    // ---------------- COLISÕES ----------------
-    void OnCollisionEnter2D(Collision2D collision)
+    // ---------------- ATAQUE ----------------
+    void Attack()
     {
-        if (collision.gameObject.layer == 8)
+        attackTimer += Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.X) && attackTimer >= attackCooldown)
+        {
+            anim.SetTrigger("Attack");
+
+            // INSTANCIA POÇÃO
+            GameObject potionObj = Instantiate(potionPrefab, attackPoint.position, attackPoint.rotation);
+
+            // PASSA A DIREÇÃO PARA O PROJÉTIL
+            PotionProjectile potion = potionObj.GetComponent<PotionProjectile>();
+
+            if (transform.eulerAngles.y == 0)
+                potion.direcao = 1;   // direita
+            else
+                potion.direcao = -1;  // esquerda
+
+            attackTimer = 0;
+        }
+    }
+
+    // ---------------- COLISÕES ----------------
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.layer == 8)
         {
             isJumping = false;
             anim.SetBool("Jump", false);
         }
-
-        if (collision.gameObject.CompareTag("Perigo"))
-        {
-            GameController.instance.AlterarVida(-10f);
-        }
     }
 
-    void OnCollisionExit2D(Collision2D collision)
+    private void OnCollisionExit2D(Collision2D col)
     {
-        if (collision.gameObject.layer == 8)
+        if (col.gameObject.layer == 8)
         {
             isJumping = true;
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Abismo"))
-        {
-            GameController.instance.ShowGameOver();
-            Destroy(gameObject);
         }
     }
 }
