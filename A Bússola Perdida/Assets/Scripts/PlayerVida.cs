@@ -19,27 +19,7 @@ public class PlayerVida : MonoBehaviour
     //Método chamado quando o jogador leva dano
     public void TomarDano(float dano)
     {
-        //Diminui a vida de acordo com o valor do dano recebido
-        vidaAtual -= dano;
-
-        //Atualiza o valor visual da barra de vida
-        barraDeVida.GerenciarVida(vidaAtual);
-
-        //Verifica se a vida chegou a zero (ou menos)
-        if (vidaAtual <= 0)
-        {
-            Morrer(); //Chama o método de morte
-        }
+        GameController.instance.AlterarVida(-dano);
     }
 
-    //Método executado quando o jogador morre
-    void Morrer()
-    {
-        Debug.Log("Jogador morreu!");
-        //Aqui você pode adicionar:
-        // - Animação de morte
-        // - Desativar controles do jogador
-        // - Chamar tela de Game Over
-        // - Reiniciar a fase, etc.
-    }
 }

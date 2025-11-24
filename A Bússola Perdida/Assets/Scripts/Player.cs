@@ -18,6 +18,11 @@ public class Player : MonoBehaviour
     private Rigidbody2D rig;
     private Animator anim;
 
+    [Header("DANO POR PERIGO")]
+    public float danoPerigo = 20f;
+    public float tempoEntreDano = 1f;
+    private float danoTimer = 0f;
+
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
@@ -29,6 +34,8 @@ public class Player : MonoBehaviour
         Move();
         Jump();
         Attack();
+
+        danoTimer += Time.deltaTime;
     }
 
     // ---------------- MOVIMENTO ----------------
@@ -37,20 +44,10 @@ public class Player : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         transform.position += new Vector3(h, 0, 0) * Speed * Time.deltaTime;
 
-        if (h > 0)
-        {
-            anim.SetBool("Walk", true);
-            transform.eulerAngles = Vector3.zero;
-        }
-        else if (h < 0)
-        {
-            anim.SetBool("Walk", true);
-            transform.eulerAngles = new Vector3(0, 180, 0);
-        }
-        else
-        {
-            anim.SetBool("Walk", false);
-        }
+        anim.SetBool("Walk", h != 0);
+
+        if (h > 0) transform.eulerAngles = Vector3.zero;
+        if (h < 0) transform.eulerAngles = new Vector3(0, 180, 0);
     }
 
     // ---------------- PULO ----------------
@@ -82,27 +79,14 @@ public class Player : MonoBehaviour
         {
             anim.SetTrigger("Attack");
 
-            // INSTANCIA POÇÃO
             GameObject potionObj = Instantiate(potionPrefab, attackPoint.position, attackPoint.rotation);
-
-            // PASSA A DIREÇÃO PARA O PROJÉTIL
             PotionProjectile potion = potionObj.GetComponent<PotionProjectile>();
 
-            if (transform.eulerAngles.y == 0)
-                potion.direcao = 1;   // direita
-            else
-                potion.direcao = -1;  // esquerda
+            potion.direcao = (transform.eulerAngles.y == 0) ? 1 : -1;
 
             attackTimer = 0;
         }
     }
-
-    void Morrer()
-    {
-        // coloque aqui qualquer ação de game over
-        Destroy(gameObject); // ou chamar uma animação antes
-    }
-
 
     // ---------------- COLISÕES ----------------
     private void OnCollisionEnter2D(Collision2D col)
@@ -112,13 +96,28 @@ public class Player : MonoBehaviour
             isJumping = false;
             anim.SetBool("Jump", false);
         }
+
+        if (col.collider.CompareTag("Perigo"))
+        {
+            TomarDanoPerigo();
+        }
     }
 
-    private void OnCollisionExit2D(Collision2D col)
+    private void OnCollisionStay2D(Collision2D col)
     {
-        if (col.gameObject.layer == 8)
+        if (col.collider.CompareTag("Perigo"))
         {
-            isJumping = true;
+            TomarDanoPerigo();
+        }
+    }
+
+    // ---------------- DANO POR PERIGO ----------------
+    void TomarDanoPerigo()
+    {
+        if (danoTimer >= tempoEntreDano)
+        {
+            GameController.instance.AlterarVida(-danoPerigo);
+            danoTimer = 0f;
         }
     }
 
@@ -126,9 +125,7 @@ public class Player : MonoBehaviour
     {
         if (collision.CompareTag("Abismo"))
         {
-            Debug.Log("Player caiu no abismo");
-            Morrer();
+            GameController.instance.AlterarVida(-999); // morte instantânea
         }
     }
-
 }
