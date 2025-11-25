@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour
+public class BossHealth : MonoBehaviour
 {
     public float vida = 20f;
     public GameObject deathParticles; // particulas de desintegração

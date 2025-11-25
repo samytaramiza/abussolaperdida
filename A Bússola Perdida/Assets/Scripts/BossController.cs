@@ -2,120 +2,78 @@ using UnityEngine;
 
 public class BossController : MonoBehaviour
 {
-    [Header("Referências")]
-    public Transform player;
-    public Transform firePoint;
-    public GameObject bossPowerPrefab;
+    public float speed = 2f;
+    public float distanciaAtaque = 2.5f;
+    public float tempoEntreAtaques = 2f;
 
-    [Header("Configurações de Movimento")]
-    public float moveSpeed = 2f;
-    public float stoppingDistance = 3f;
-
-    [Header("Configurações de Ataque")]
-    public float attackCooldown = 2f;
-    public float attackSpeed = 10f;
-
-    [Header("Animações")]
+    private float proximoAtaque;
+    private Transform player;
     private Animator anim;
-    private bool isAttacking = false;
-    private float attackTimer;
-
     private Rigidbody2D rb;
 
+    private bool atacando = false;
 
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        attackTimer = attackCooldown;
     }
 
     void Update()
     {
-        if (player == null) return;
-
-        // Timer do ataque
-        attackTimer -= Time.deltaTime;
-
-        // Se não está atacando → pode andar
-        if (!isAttacking)
-        {
-            Movimento();
-        }
-
-        // Se o player está perto o suficiente → atacar
         float distancia = Vector2.Distance(transform.position, player.position);
 
-        if (distancia <= stoppingDistance && attackTimer <= 0f)
+        // ---- Se está atacando, não anda ----
+        if (atacando)
         {
-            Atacar();
+            rb.linearVelocity = Vector2.zero;
+            return;
         }
 
-        // Faz o boss olhar para o player sempre
-        FlipTowardsPlayer();
+        // ---- Se está no RANGE do ataque ----
+        if (distancia <= distanciaAtaque)
+        {
+            rb.linearVelocity = Vector2.zero;
+            anim.SetBool("isWalking", false);
+
+            if (Time.time >= proximoAtaque)
+            {
+                Atacar();
+            }
+
+            return;
+        }
+
+        // ---- ANDAR ----  
+        Vector2 direcao = (player.position - transform.position).normalized;
+        rb.linearVelocity = new Vector2(direcao.x * speed, rb.linearVelocity.y);
+
+        anim.SetBool("isWalking", true);
     }
 
-
-    // ---------------- MOVIMENTO ----------------
-    void Movimento()
-    {
-        float distancia = Vector2.Distance(transform.position, player.position);
-
-        if (distancia > stoppingDistance)
-        {
-            anim.SetBool("Walk", true);
-
-            Vector2 novaPos = Vector2.MoveTowards(
-                transform.position,
-                player.position,
-                moveSpeed * Time.deltaTime
-            );
-
-            rb.MovePosition(novaPos);
-        }
-        else
-        {
-            anim.SetBool("Walk", false);
-        }
-    }
-
-
-    // ---------------- ATAQUE ----------------
     void Atacar()
     {
-        isAttacking = true;
+        atacando = true;
+        proximoAtaque = Time.time + tempoEntreAtaques;
+
+        anim.SetBool("isWalking", false);
+
+        // TRIGGER DA ANIMAÇÃO
         anim.SetTrigger("Attack");
     }
 
-
-    // Chamado pelo Animation Event no final da animação "Attack"
-    public void EndAttack()
+    // Chamado pelo EVENTO dentro da animação
+    public void Shoot()
     {
-        // Instancia o projétil
-        GameObject power = Instantiate(bossPowerPrefab, firePoint.position, firePoint.rotation);
-
-        // Define direção até o jogador
-        Vector2 dir = (player.position - firePoint.position).normalized;
-
-        Rigidbody2D rbPower = power.GetComponent<Rigidbody2D>();
-        rbPower.linearVelocity = dir * attackSpeed;
-
-        // Reseta estado
-        isAttacking = false;
-        attackTimer = attackCooldown;
+        // Aqui você instancia o poder do Boss
+        Debug.Log("Boss lançou feitiço!");
     }
 
-
-    // ---------------- VIRAR PARA O PLAYER ----------------
-    void FlipTowardsPlayer()
+    // Chamado NO FINAL da animação (EVENT no último frame)
+    public void EndAttack()
     {
-        if (player.position.x > transform.position.x)
-        {
-            transform.eulerAngles = Vector3.zero;
-        }
-        else
-        {
-            transform.eulerAngles = new Vector3(0, 180, 0);
-        }
+        atacando = false;
+        anim.ResetTrigger("Attack");
     }
 }
