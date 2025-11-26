@@ -1,27 +1,24 @@
-using UnityEngine; 
-using TMPro; 
-using UnityEngine.SceneManagement; 
-using UnityEngine.UI;
+using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    public int chancesRestantes = 3;
-
-    public BarraDeVida barra;
-    private float vida = 100;
-
-    public int totalScorePocoes;
-    public TMP_Text scoreTextPocoes;
-
-    public int totalScoreRosas;
-    public TMP_Text scoreTextRosas;
-
     public static GameController instance;
 
-    public GameObject gameOver;
-    public GameObject imagePocao;
-    public GameObject imageRosa;
-    public GameObject barraDeVida;
+    [Header("Sistema de Vida")]
+    public BarraDeVida barra;
+    private float vida = 100f;
+    public int chancesRestantes = 3;
+
+    [Header("Pontuação")]
+    public int totalRosas;
+    public TMP_Text textoRosas; // formato: "0/30"
+
+    [Header("Game Over UI")]
+    public GameObject painelGameOver;
+    public GameObject uiVida;
+    public GameObject uiRosas;
 
     void Awake()
     {
@@ -31,15 +28,10 @@ public class GameController : MonoBehaviour
     void Start()
     {
         barra.SetMaxVida(100);
+        AtualizarTextoRosas();
     }
 
-    public void UpdateScoreText()
-    {
-        scoreTextPocoes.text = totalScorePocoes.ToString();
-        scoreTextRosas.text = totalScoreRosas.ToString();
-    }
-
-    // -------- PERDER VIDA --------
+    //--------- VIDA -----------
     public void AlterarVida(float quantidade)
     {
         vida = Mathf.Clamp(vida + quantidade, 0f, 100f);
@@ -51,42 +43,49 @@ public class GameController : MonoBehaviour
         }
     }
 
-    // -------- SISTEMA DE VIDAS --------
+    //-------- MORTE / CHANCES --------
     void MorteDoPlayer()
     {
         chancesRestantes--;
 
         if (chancesRestantes <= 0)
         {
-            // AGORA SIM!!! APARECE O GAME OVER
-            ShowGameOver();
+            MostrarGameOver();
         }
         else
         {
-            // Reinicia fase normalmente
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            // reinicia a mesma fase
+            Scene cena = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(cena.name);
         }
     }
 
-    public void ShowGameOver()
+    public void MostrarGameOver()
     {
-        gameOver.SetActive(true);
-        imagePocao.SetActive(false);
-        imageRosa.SetActive(false);
-        barraDeVida.SetActive(false);
-
-        // Garanta que o tempo continue normal
         Time.timeScale = 1f;
+
+        painelGameOver.SetActive(true);
+        uiVida.SetActive(false);
+        uiRosas.SetActive(false);
     }
 
+    //--------- ROSAS ----------
     public void AddRosa(int quantidade)
     {
-        totalScoreRosas += quantidade;
-        UpdateScoreText();
+        totalRosas += quantidade;
+        AtualizarTextoRosas();
+    }
 
-        if (totalScoreRosas % 10 == 0 && vida < 100)
-        {
-            AlterarVida(10f);
-        }
+    public void AtualizarTextoRosas()
+    {
+        textoRosas.text = totalRosas + "/30";
+    }
+
+    //--------- ABISMO ----------
+    public void PlayerCaiuNoAbismo()
+    {
+        // cair no abismo = morte
+        vida = 0;
+        MorteDoPlayer();
     }
 }

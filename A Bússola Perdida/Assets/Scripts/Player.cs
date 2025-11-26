@@ -125,7 +125,9 @@ public class Player : MonoBehaviour
     {
         if (collision.CompareTag("Abismo"))
         {
-            GameController.instance.AlterarVida(-999); // morte instantânea
+            
         }
     }
+
+  
 }

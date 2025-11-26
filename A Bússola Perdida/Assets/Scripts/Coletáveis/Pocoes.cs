@@ -29,10 +29,10 @@ public class Pocoes : MonoBehaviour
             circle.enabled = false;
 
             // Soma o valor da poção ao total do jogador
-            GameController.instance.totalScorePocoes += scorePocoes;
+            //GameController.instance.totalScorePocoes += scorePocoes;
 
             // Atualiza o texto na tela mostrando o novo total de poções
-            GameController.instance.UpdateScoreText();
+            //GameController.instance.UpdateScoreText();
 
             //Toca o som de coleta da poção
             AudioManager.Instance.PlayAudioPotion();

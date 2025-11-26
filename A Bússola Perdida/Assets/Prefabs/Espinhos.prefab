@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 7200965919235671514}
   m_Layer: 0
   m_Name: Espinhos
-  m_TagString: Untagged
+  m_TagString: Perigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
