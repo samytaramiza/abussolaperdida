@@ -61,10 +61,12 @@ public class Player : MonoBehaviour
                 isJumping = true;
                 doubleJump = true;
                 anim.SetBool("Jump", true);
+                AudioManager.Instance.PlayJump();
             }
             else if (doubleJump)
             {
                 rig.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
+                AudioManager.Instance.PlayJump();
                 doubleJump = false;
             }
         }
@@ -118,14 +120,6 @@ public class Player : MonoBehaviour
         {
             GameController.instance.AlterarVida(-danoPerigo);
             danoTimer = 0f;
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Abismo"))
-        {
-            
         }
     }
 

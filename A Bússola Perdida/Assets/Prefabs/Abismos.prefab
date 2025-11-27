@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4027640799486369379}
   - component: {fileID: 8476657037127181351}
   - component: {fileID: 7193028148616379554}
+  - component: {fileID: 4584502614371576604}
   m_Layer: 0
   m_Name: Abismos
   m_TagString: Abismo
@@ -137,3 +138,15 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &4584502614371576604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6056280955541376399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c7f31c21420982b8bbf17fd74f2c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Abismo

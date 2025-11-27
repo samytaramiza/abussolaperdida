@@ -22,6 +22,8 @@ public class RosaDosVentos : MonoBehaviour
 
             GameController.instance.AddRosa(valor);
 
+            AudioManager.Instance.PlayAudioCoin();
+
             Destroy(gameObject, 0.2f);
         }
     }

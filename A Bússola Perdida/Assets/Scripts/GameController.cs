@@ -74,6 +74,17 @@ public class GameController : MonoBehaviour
     {
         totalRosas += quantidade;
         AtualizarTextoRosas();
+
+        // --- RECOMPENSA DE 30 ROSAS ---
+        if (totalRosas >= 30)
+        {
+            // dá 20 de vida
+            AlterarVida(20f);
+
+            // reseta para continuar coletando novamente se quiser
+            totalRosas = 0;
+            AtualizarTextoRosas();
+        }
     }
 
     public void AtualizarTextoRosas()
@@ -84,7 +95,6 @@ public class GameController : MonoBehaviour
     //--------- ABISMO ----------
     public void PlayerCaiuNoAbismo()
     {
-        // cair no abismo = morte
         vida = 0;
         MorteDoPlayer();
     }

@@ -91,7 +91,6 @@ GameObject:
   - component: {fileID: 5404697107588702552}
   - component: {fileID: 6894447854452875888}
   - component: {fileID: 6261637041615248147}
-  - component: {fileID: 4058745067822090544}
   - component: {fileID: 47452930716767500}
   - component: {fileID: 7034572023845189423}
   m_Layer: 0
@@ -212,7 +211,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -270,20 +269,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.308938, y: 2.4739132}
   m_EdgeRadius: 0
---- !u!114 &4058745067822090544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1482289788369456746}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df10f61ee7b703ac383f378b58816473, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  vida: 20
-  deathParticles: {fileID: 5351828803102497678, guid: deffa16df1c810022aa5f545cd110a2d, type: 3}
 --- !u!114 &47452930716767500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -313,6 +298,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d91b91899e80ac598fecb7e6bc9f60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  dano: 20
+  deathEffect: {fileID: 5351828803102497678, guid: deffa16df1c810022aa5f545cd110a2d, type: 3}
 --- !u!1 &1666101613538115684
 GameObject:
   m_ObjectHideFlags: 0
