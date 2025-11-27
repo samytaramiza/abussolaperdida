@@ -98,4 +98,5 @@ public class GameController : MonoBehaviour
         vida = 0;
         MorteDoPlayer();
     }
+    
 }

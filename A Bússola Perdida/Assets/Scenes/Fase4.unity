@@ -2325,9 +2325,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: GameController, Assembly-CSharp
-        m_MethodName: Reiniciar
+      - m_Target: {fileID: 882574503}
+        m_TargetAssemblyTypeName: Menu, Assembly-CSharp
+        m_MethodName: LoadScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2479,11 +2479,11 @@ PrefabInstance:
     - target: {fileID: -4977811946698032731, guid: 3f95bf452d1d37f478f85213f8b52b3b, type: 3}
       propertyPath: pontoA
       value: 
-      objectReference: {fileID: 1968939194}
+      objectReference: {fileID: 827784433}
     - target: {fileID: -4977811946698032731, guid: 3f95bf452d1d37f478f85213f8b52b3b, type: 3}
       propertyPath: pontoB
       value: 
-      objectReference: {fileID: 752900761}
+      objectReference: {fileID: 692628495}
     - target: {fileID: 482711749589657631, guid: 3f95bf452d1d37f478f85213f8b52b3b, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 14.38
@@ -8522,7 +8522,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.920677, y: -0.92, z: -10}
+  m_LocalPosition: {x: 375.7, y: 5.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9538,6 +9538,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1971612580}
     m_Modifications:
+    - target: {fileID: -4977811946698032731, guid: 3f95bf452d1d37f478f85213f8b52b3b, type: 3}
+      propertyPath: pontoA
+      value: 
+      objectReference: {fileID: 1968939194}
+    - target: {fileID: -4977811946698032731, guid: 3f95bf452d1d37f478f85213f8b52b3b, type: 3}
+      propertyPath: pontoB
+      value: 
+      objectReference: {fileID: 752900761}
     - target: {fileID: 482711749589657631, guid: 3f95bf452d1d37f478f85213f8b52b3b, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
       value: 14.38
@@ -30678,7 +30686,7 @@ Transform:
   m_GameObject: {fileID: 1221519882}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -38.920677, y: -0.92, z: -10}
+  m_LocalPosition: {x: 375.7, y: 5.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34792,11 +34800,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5505759361651475604, guid: 3f36e4fe43f6336bba5e9a5d21e07352, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.920677
+      value: 375.7
       objectReference: {fileID: 0}
     - target: {fileID: 5505759361651475604, guid: 3f36e4fe43f6336bba5e9a5d21e07352, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.92
+      value: 5.3
       objectReference: {fileID: 0}
     - target: {fileID: 5505759361651475604, guid: 3f36e4fe43f6336bba5e9a5d21e07352, type: 3}
       propertyPath: m_LocalPosition.z

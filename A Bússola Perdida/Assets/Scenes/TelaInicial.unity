@@ -1450,7 +1450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a5b656c0fa6abd4d8cc07675569a958, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Menu
-  PanelConfig: {fileID: 1215892989}
+  PanelConfig: {fileID: 0}
   imagePocao: {fileID: 0}
   imageRosa: {fileID: 0}
   barraDeVida: {fileID: 0}
