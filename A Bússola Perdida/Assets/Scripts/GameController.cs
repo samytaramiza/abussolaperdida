@@ -4,7 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
-    public static GameController instance;
+    public Player player; 
+     public static GameController instance;
 
     [Header("Sistema de Vida")]
     public BarraDeVida barra;
@@ -54,7 +55,6 @@ public class GameController : MonoBehaviour
         }
         else
         {
-            // reinicia a mesma fase
             Scene cena = SceneManager.GetActiveScene();
             SceneManager.LoadScene(cena.name);
         }
@@ -75,13 +75,10 @@ public class GameController : MonoBehaviour
         totalRosas += quantidade;
         AtualizarTextoRosas();
 
-        // --- RECOMPENSA DE 30 ROSAS ---
         if (totalRosas >= 30)
         {
-            // dá 20 de vida
             AlterarVida(20f);
 
-            // reseta para continuar coletando novamente se quiser
             totalRosas = 0;
             AtualizarTextoRosas();
         }
@@ -98,5 +95,5 @@ public class GameController : MonoBehaviour
         vida = 0;
         MorteDoPlayer();
     }
-    
+
 }
