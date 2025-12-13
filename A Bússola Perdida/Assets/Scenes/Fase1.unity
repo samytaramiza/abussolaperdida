@@ -39730,12 +39730,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c42c39a6e2e51e45a221b6c101b97fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  sliderMusica: {fileID: 0}
-  sliderEfeitos: {fileID: 0}
+  sliderMusica: {fileID: 1427608617}
+  sliderEfeitos: {fileID: 195772547}
   jumpSound: {fileID: 8300000, guid: 05e7e9b2d128c971085070ce7ed419b1, type: 3}
   coinSound: {fileID: 8300000, guid: 89989cef5a69c50b096415fa738769e2, type: 3}
   potionSound: {fileID: 8300000, guid: 809201f9dcc051d88964a359192c7c9d, type: 3}
-  musicaSource: {fileID: 0}
+  musicaSource: {fileID: 519420034}
   efeitosSource: {fileID: 1061883953}
 --- !u!4 &1061883955
 Transform:
