@@ -10,6 +10,8 @@ TagManager:
   - Boss
   - Enemy
   - MiniDuende
+  - Parede
+  - Bussola
   layers:
   - Default
   - TransparentFX

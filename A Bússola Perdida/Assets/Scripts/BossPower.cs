@@ -1,27 +1,30 @@
 using UnityEngine;
 
-public class BossPower : MonoBehaviour
+public class PowerBoss : MonoBehaviour
 {
-    public float lifeTime = 3f;
+    public float speed = 6f;
     public float damage = 10f;
-    public GameObject hitEffect;
+    public float lifeTime = 3f;
 
-    private void Start()
+    void Start()
     {
         Destroy(gameObject, lifeTime);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void Update()
     {
-        if (collision.CompareTag("Player"))
+        transform.Translate(Vector2.right * speed * Time.deltaTime);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
         {
-            // aplica dano
-            GameController.instance.AlterarVida(-damage);
+            PlayerVida vida = other.GetComponent<PlayerVida>();
+            if (vida != null)
+                vida.TomarDano(damage);
+
+            Destroy(gameObject);
         }
-
-        if (hitEffect != null)
-            Instantiate(hitEffect, transform.position, Quaternion.identity);
-
-        Destroy(gameObject);
     }
 }

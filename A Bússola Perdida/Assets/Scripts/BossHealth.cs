@@ -1,26 +1,71 @@
 using UnityEngine;
+using System.Collections;
 
 public class BossHealth : MonoBehaviour
 {
-    public float vida = 20f;
-    public GameObject deathParticles; // particulas de desintegração
+    [Header("Vida do Boss")]
+    public float vidaMaxima = 100f;
+    public float vidaAtual;
 
-    public void LevarDano(float dano)
+    [Header("Feedback de Dano")]
+    public Color corDeDano = Color.red;
+    public float tempoPiscando = 0.15f;
+
+    private SpriteRenderer sprite;
+    private Color corOriginal;
+    private bool tomandoDano;
+
+    void Start()
     {
-        vida -= dano;
+        vidaAtual = vidaMaxima;
 
-        if (vida <= 0)
+        sprite = GetComponent<SpriteRenderer>();
+        corOriginal = sprite.color;
+    }
+
+    // ---------------- TOMAR DANO ----------------
+    public void TomarDano(float dano)
+    {
+        if (vidaAtual <= 0) return;
+
+        vidaAtual -= dano;
+
+        // Feedback visual
+        if (!tomandoDano)
+        {
+            StartCoroutine(PiscarDano());
+        }
+
+        if (vidaAtual <= 0)
         {
             Morrer();
         }
     }
 
+    // ---------------- PISCAR COR ----------------
+    IEnumerator PiscarDano()
+    {
+        tomandoDano = true;
+
+        sprite.color = corDeDano;
+
+        yield return new WaitForSeconds(tempoPiscando);
+
+        sprite.color = corOriginal;
+
+        tomandoDano = false;
+    }
+
+    // ---------------- MORTE ----------------
     void Morrer()
     {
-        // Instancia as partículas
-        if (deathParticles != null)
-            Instantiate(deathParticles, transform.position, Quaternion.identity);
+        Debug.Log("Boss morreu!");
 
-        Destroy(gameObject); // destrói o inimigo
+        // Aqui você pode:
+        // - desativar o boss
+        // - liberar a bússola
+        // - desativar parede invisível
+
+        gameObject.SetActive(false);
     }
 }

@@ -12542,97 +12542,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99c455da83ade284fbaeb5eabf716765, type: 3}
---- !u!1 &402633084
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 402633087}
-  - component: {fileID: 402633086}
-  - component: {fileID: 402633089}
-  m_Layer: 0
-  m_Name: BlockBussola
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!61 &402633086
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402633084}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.07562256, y: 5.0979815}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1.6958008, y: 15.483229}
-  m_EdgeRadius: 0
---- !u!4 &402633087
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402633084}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 414.18, y: 5.49, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &402633089
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 402633084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 792d05e058771d61e909f720b6c6fc35, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::InvisibleWall
 --- !u!1 &405469341
 GameObject:
   m_ObjectHideFlags: 0
@@ -45245,9 +45154,9 @@ GameObject:
   m_Component:
   - component: {fileID: 794824142}
   - component: {fileID: 794824141}
+  - component: {fileID: 794824140}
   - component: {fileID: 794824143}
   - component: {fileID: 794824144}
-  - component: {fileID: 794824145}
   m_Layer: 0
   m_Name: "B\xFAssola"
   m_TagString: Untagged
@@ -45255,6 +45164,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &794824140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794824139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e51d3fde8b8928489b143d451fc268b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PontoPasseLevel
+  ultimaFase: 1
+  PanelVictory: {fileID: 197410073}
+  scorePocao: {fileID: 0}
+  scoreRosa: {fileID: 0}
+  imgPocao: {fileID: 0}
+  imgRosa: {fileID: 0}
+  faseAtual: 1
+  totalFases: 4
+  menuFasesSceneName: MenuFases
 --- !u!212 &794824141
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45377,22 +45307,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AnimMoeda
   velocidadeGiro: 50
---- !u!114 &794824145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 794824139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 297be8674c27814c1a2837dadbc43944, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ResgateBussolaResgateBussola
-  panelVictory: {fileID: 197410073}
-  barraVidaUI: {fileID: 268842839}
-  rosasUI: {fileID: 224402600}
-  textoRosas: {fileID: 1357876737}
 --- !u!1001 &797516621
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59519,17 +59433,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.666554, y: 11.030317}
+  m_Offset: {x: -0.666554, y: -1.0083156}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 8.414469, y: 22.070002}
     newSize: {x: 11.910001, y: 22.123974}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5.2129, y: 21.116116}
+  m_Size: {x: 5.2129, y: 19.271309}
   m_EdgeRadius: 0
 --- !u!50 &1177781308
 Rigidbody2D:
@@ -59541,7 +59455,7 @@ Rigidbody2D:
   m_GameObject: {fileID: 1177781306}
   m_BodyType: 1
   m_Simulated: 1
-  m_UseFullKinematicContacts: 1
+  m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
@@ -59604,7 +59518,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 5147274338526168628, guid: 34196accb56391b9f9ea373ca725c521, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -59624,14 +59538,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177781306}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.0016862247, z: -0, w: 0.99999857}
-  m_LocalPosition: {x: 407.46, y: 2.94, z: 12.83}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 407.46, y: 5.939999, z: 12.83}
   m_LocalScale: {x: 0.2809597, y: 0.2809597, z: 0.2809597}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1979839631}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0.193, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!95 &1177781311
 Animator:
   serializedVersion: 7
@@ -59673,19 +59587,12 @@ MonoBehaviour:
   - {fileID: 1163219452}
   powerBoss: {fileID: 4678709246319149785, guid: 83ab6d3fc354f713bb4fff6c436ecce8, type: 3}
   firePoint: {fileID: 1979839631}
-  attackCooldown: 5
-  attackFlashColor: {r: 0.16794232, g: 0.67390764, b: 0.6981132, a: 1}
-  attackFlashCount: 3
-  attackFlashInterval: 0.1
+  attackCooldown: 1.5
   teleportPoints:
   - {fileID: 1246804119}
   - {fileID: 1762126921}
   - {fileID: 2145596122}
-  teleportDelay: 5
-  teleportFlashCount: 4
-  teleportFlashInterval: 0.1
-  player: {fileID: 583201817}
-  visionRange: 30
+  teleportDelay: 0.5
 --- !u!114 &1177781313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -59698,10 +59605,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f93440771836536029b91f0a21a5eb14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossHealth
-  vidaMaxima: 100
-  vidaAtual: 0
-  corDeDano: {r: 1, g: 0, b: 0, a: 1}
-  tempoPiscando: 0.15
+  vida: 100
+  deathParticles: {fileID: 5351828803102497678, guid: deffa16df1c810022aa5f545cd110a2d, type: 3}
 --- !u!4 &1187105444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6147735646835598849, guid: 99c455da83ade284fbaeb5eabf716765, type: 3}
@@ -97919,10 +97824,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 154985726278150245, guid: 3f36e4fe43f6336bba5e9a5d21e07352, type: 3}
-      propertyPath: barraDeVida
-      value: 
-      objectReference: {fileID: 268842841}
     - target: {fileID: 611160103411352235, guid: 3f36e4fe43f6336bba5e9a5d21e07352, type: 3}
       propertyPath: m_Name
       value: Player
@@ -98998,4 +98899,3 @@ SceneRoots:
   - {fileID: 250454968}
   - {fileID: 1721955628}
   - {fileID: 107164095}
-  - {fileID: 402633087}

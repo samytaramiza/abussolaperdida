@@ -4,7 +4,7 @@ public class PotionProjectile : MonoBehaviour
 {
     public float speed = 8f;
     public int direcao = 1;
-    public float dano = 20f; // dano ao boss
+    public float dano = 20f;
 
     void Update()
     {
@@ -13,19 +13,17 @@ public class PotionProjectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Dano no Boss
         if (collision.CompareTag("Boss"))
         {
             BossHealth vidaBoss = collision.GetComponent<BossHealth>();
             if (vidaBoss != null)
             {
-                vidaBoss.LevarDano(dano);
+                vidaBoss.TomarDano(dano);
             }
 
             Destroy(gameObject);
         }
 
-        // Destruir ao bater em parede
         if (collision.CompareTag("Parede"))
         {
             Destroy(gameObject);

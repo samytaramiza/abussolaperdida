@@ -9,6 +9,9 @@ public class Player : MonoBehaviour
     public bool isJumping;
     public bool doubleJump;
 
+    private int facingDirection = 1; // 1 = direita | -1 = esquerda
+    private Vector3 originalScale;
+
     [Header("Ataque")]
     public GameObject potionPrefab;
     public Transform attackPoint;
@@ -27,6 +30,9 @@ public class Player : MonoBehaviour
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        // Guarda o scale original para não alterar o tamanho
+        originalScale = transform.localScale;
     }
 
     void Update()
@@ -42,12 +48,31 @@ public class Player : MonoBehaviour
     void Move()
     {
         float h = Input.GetAxis("Horizontal");
+
+        // Movimento horizontal
         transform.position += new Vector3(h, 0, 0) * Speed * Time.deltaTime;
 
         anim.SetBool("Walk", h != 0);
 
-        if (h > 0) transform.eulerAngles = Vector3.zero;
-        if (h < 0) transform.eulerAngles = new Vector3(0, 180, 0);
+        // Direção correta (sem alterar tamanho)
+        if (h > 0)
+        {
+            facingDirection = 1;
+            transform.localScale = new Vector3(
+                Mathf.Abs(originalScale.x),
+                originalScale.y,
+                originalScale.z
+            );
+        }
+        else if (h < 0)
+        {
+            facingDirection = -1;
+            transform.localScale = new Vector3(
+                -Mathf.Abs(originalScale.x),
+                originalScale.y,
+                originalScale.z
+            );
+        }
     }
 
     // ---------------- PULO ----------------
@@ -81,12 +106,16 @@ public class Player : MonoBehaviour
         {
             anim.SetTrigger("Attack");
 
-            GameObject potionObj = Instantiate(potionPrefab, attackPoint.position, attackPoint.rotation);
+            GameObject potionObj = Instantiate(
+                potionPrefab,
+                attackPoint.position,
+                Quaternion.identity
+            );
+
             PotionProjectile potion = potionObj.GetComponent<PotionProjectile>();
+            potion.direcao = facingDirection;
 
-            potion.direcao = (transform.eulerAngles.y == 0) ? 1 : -1;
-
-            attackTimer = 0;
+            attackTimer = 0f;
         }
     }
 
@@ -122,6 +151,4 @@ public class Player : MonoBehaviour
             danoTimer = 0f;
         }
     }
-
-  
 }
