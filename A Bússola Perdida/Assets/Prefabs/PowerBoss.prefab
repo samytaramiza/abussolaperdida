@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossPower
   speed: 7
-  damage: 10
+  damage: 20
   lifeTime: 3
 --- !u!212 &5922179397072251288
 SpriteRenderer:

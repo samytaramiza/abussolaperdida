@@ -15611,7 +15611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1436f6647f60c1429a4ad741430954c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
-  player: {fileID: 0}
+  player: {fileID: 1648170943}
   parallaxFactor: 0.3
 --- !u!1 &351218231
 GameObject:
@@ -22550,7 +22550,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 84999836d0bc3947085a74315c6a0dd3, type: 3}
+  m_Resource: {fileID: 8300000, guid: a5f6657efcc9f024abf62aba6efec4b3, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -23564,7 +23564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1436f6647f60c1429a4ad741430954c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
-  player: {fileID: 0}
+  player: {fileID: 1648170943}
   parallaxFactor: 0.4
 --- !u!1001 &600531146
 PrefabInstance:
@@ -32509,6 +32509,8 @@ MonoBehaviour:
   chancesRestantes: 3
   totalRosas: 0
   textoRosas: {fileID: 1536786459}
+  totalPocao: 0
+  textoPocao: {fileID: 0}
   painelGameOver: {fileID: 136385335}
   uiVida: {fileID: 728023341}
   uiRosas: {fileID: 988126263}
@@ -62749,7 +62751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1436f6647f60c1429a4ad741430954c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
-  player: {fileID: 0}
+  player: {fileID: 1648170943}
   parallaxFactor: 0.2
 --- !u!1 &1193703885
 GameObject:
@@ -73821,7 +73823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1436f6647f60c1429a4ad741430954c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Parallax
-  player: {fileID: 0}
+  player: {fileID: 1648170943}
   parallaxFactor: 0.5
 --- !u!1 &1687504238
 GameObject:

@@ -11,6 +11,9 @@ public class BossHealth : MonoBehaviour
     public Color corDeDano = Color.red;
     public float tempoPiscando = 0.15f;
 
+    [Header("Barreira a ser desbloqueada")]
+    public GameObject paredeInvisivel; // arraste a barreira no Inspector
+
     private SpriteRenderer sprite;
     private Color corOriginal;
     private bool tomandoDano;
@@ -61,11 +64,11 @@ public class BossHealth : MonoBehaviour
     {
         Debug.Log("Boss morreu!");
 
-        // Aqui você pode:
-        // - desativar o boss
-        // - liberar a bússola
-        // - desativar parede invisível
+        // Desativa a barreira
+        if (paredeInvisivel != null)
+            paredeInvisivel.SetActive(false);
 
+        // Desativa o boss
         gameObject.SetActive(false);
     }
 }

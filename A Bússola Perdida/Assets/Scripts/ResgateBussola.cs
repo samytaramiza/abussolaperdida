@@ -10,6 +10,8 @@ public class ResgateBussola : MonoBehaviour
     public GameObject barraVidaUI;
     public GameObject rosasUI;
     public TMP_Text textoRosas;
+    public GameObject pocoesUI;
+    public TMP_Text textoPocoes;
 
     void Start()
     {
@@ -25,6 +27,9 @@ public class ResgateBussola : MonoBehaviour
             barraVidaUI.SetActive(false);
             rosasUI.SetActive(false);
             textoRosas.gameObject.SetActive(false);
+            pocoesUI.SetActive(false);
+            textoPocoes.gameObject.SetActive(false);
+
 
             Debug.Log("Vitória!");
         }

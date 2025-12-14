@@ -9,9 +9,6 @@ public class Player : MonoBehaviour
     public bool isJumping;
     public bool doubleJump;
 
-    private int facingDirection = 1; // 1 = direita | -1 = esquerda
-    private Vector3 originalScale;
-
     [Header("Ataque")]
     public GameObject potionPrefab;
     public Transform attackPoint;
@@ -21,18 +18,17 @@ public class Player : MonoBehaviour
     private Rigidbody2D rig;
     private Animator anim;
 
-    [Header("DANO POR PERIGO")]
+    [Header("Dano por perigo")]
     public float danoPerigo = 20f;
     public float tempoEntreDano = 1f;
-    private float danoTimer = 0f;
+    private float danoTimer;
+
+    private bool facingRight = true; //controla direção do player
 
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-
-        // Guarda o scale original para não alterar o tamanho
-        originalScale = transform.localScale;
     }
 
     void Update()
@@ -42,37 +38,32 @@ public class Player : MonoBehaviour
         Attack();
 
         danoTimer += Time.deltaTime;
+        attackTimer += Time.deltaTime;
     }
 
-    // ---------------- MOVIMENTO ----------------
+    // ---------------- MOVIMENTO HORIZONTAL ----------------
     void Move()
     {
         float h = Input.GetAxis("Horizontal");
 
-        // Movimento horizontal
+        // mantém seu método de movimento
         transform.position += new Vector3(h, 0, 0) * Speed * Time.deltaTime;
 
         anim.SetBool("Walk", h != 0);
 
-        // Direção correta (sem alterar tamanho)
-        if (h > 0)
-        {
-            facingDirection = 1;
-            transform.localScale = new Vector3(
-                Mathf.Abs(originalScale.x),
-                originalScale.y,
-                originalScale.z
-            );
-        }
-        else if (h < 0)
-        {
-            facingDirection = -1;
-            transform.localScale = new Vector3(
-                -Mathf.Abs(originalScale.x),
-                originalScale.y,
-                originalScale.z
-            );
-        }
+        // FLIP seguro sem tocar Y/Z ou interferir no pulo
+        if (h > 0 && !facingRight)
+            Flip();
+        else if (h < 0 && facingRight)
+            Flip();
+    }
+
+    void Flip()
+    {
+        facingRight = !facingRight;
+        Vector3 scale = transform.localScale;
+        scale.x *= -1; // só inverte X
+        transform.localScale = scale;
     }
 
     // ---------------- PULO ----------------
@@ -91,8 +82,8 @@ public class Player : MonoBehaviour
             else if (doubleJump)
             {
                 rig.AddForce(Vector2.up * JumpForce, ForceMode2D.Impulse);
-                AudioManager.Instance.PlayJump();
                 doubleJump = false;
+                AudioManager.Instance.PlayJump();
             }
         }
     }
@@ -100,21 +91,19 @@ public class Player : MonoBehaviour
     // ---------------- ATAQUE ----------------
     void Attack()
     {
-        attackTimer += Time.deltaTime;
-
         if (Input.GetKeyDown(KeyCode.X) && attackTimer >= attackCooldown)
         {
+            if (!GameController.instance.TemPocao())
+                return;
+
             anim.SetTrigger("Attack");
 
-            GameObject potionObj = Instantiate(
-                potionPrefab,
-                attackPoint.position,
-                Quaternion.identity
-            );
-
+            GameObject potionObj = Instantiate(potionPrefab, attackPoint.position, Quaternion.identity);
             PotionProjectile potion = potionObj.GetComponent<PotionProjectile>();
-            potion.direcao = facingDirection;
 
+            potion.direcao = facingRight ? 1 : -1;
+
+            GameController.instance.UsarPocao();
             attackTimer = 0f;
         }
     }
@@ -129,20 +118,15 @@ public class Player : MonoBehaviour
         }
 
         if (col.collider.CompareTag("Perigo"))
-        {
             TomarDanoPerigo();
-        }
     }
 
     private void OnCollisionStay2D(Collision2D col)
     {
         if (col.collider.CompareTag("Perigo"))
-        {
             TomarDanoPerigo();
-        }
     }
 
-    // ---------------- DANO POR PERIGO ----------------
     void TomarDanoPerigo()
     {
         if (danoTimer >= tempoEntreDano)

@@ -3,8 +3,8 @@ using UnityEngine;
 public class Parallax : MonoBehaviour
 {
     [Header("Configurações")]
-    public Transform player;   // Referência ao player
-    public float parallaxFactor = 0.5f; // 0.1 = bem lento / 0.9 = quase igual ao player
+    public Transform player;          // Referência ao player
+    public float parallaxFactor = 0.5f; // Quanto menor, mais distante parece
 
     private Vector3 lastPlayerPos;
 
@@ -22,13 +22,13 @@ public class Parallax : MonoBehaviour
 
     void Update()
     {
-        // Diferença que o player se moveu desde o último frame
+        // Quanto o player se moveu
         Vector3 playerDelta = player.position - lastPlayerPos;
 
-        // Move o background apenas na horizontal
-        transform.position += new Vector3(playerDelta.x * parallaxFactor, 0f, 0f);
+        // Move o fundo no sentido CONTRÁRIO ao player
+        transform.position -= new Vector3(playerDelta.x * parallaxFactor, 0f, 0f);
 
-        // Atualiza referência
+        // Atualiza a última posição do player
         lastPlayerPos = player.position;
     }
 }
