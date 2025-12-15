@@ -592,8 +592,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 262.7032, y: 90.4151}
-  m_SizeDelta: {x: 389.3682, y: 225.4669}
+  m_AnchoredPosition: {x: 346.90057, y: 111.746704}
+  m_SizeDelta: {x: 502.3754, y: 299.6925}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &427552076
 MonoBehaviour:
@@ -725,51 +725,6 @@ RectTransform:
   m_AnchoredPosition: {x: -5.0000305, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &563955480
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 563955482}
-  - component: {fileID: 563955481}
-  m_Layer: 0
-  m_Name: PauseManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &563955481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 563955480}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c040d414f8be9a089a99af1ad50908f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PauseManager
-  panelConfig: {fileID: 0}
---- !u!4 &563955482
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 563955480}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -35.9119, y: 2.97161, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &578026235
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,8 +1343,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 263.86707, y: -204.50049}
-  m_SizeDelta: {x: 389.3645, y: 219.2285}
+  m_AnchoredPosition: {x: 348.4021, y: -280.25775}
+  m_SizeDelta: {x: 502.3706, y: 291.4004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1111406605
 MonoBehaviour:
@@ -1690,12 +1645,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c42c39a6e2e51e45a221b6c101b97fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AudioManager
-  sliderMusica: {fileID: 0}
-  sliderEfeitos: {fileID: 0}
+  sliderMusica: {fileID: 1364773710}
+  sliderEfeitos: {fileID: 1074707575}
   jumpSound: {fileID: 8300000, guid: 05e7e9b2d128c971085070ce7ed419b1, type: 3}
   coinSound: {fileID: 8300000, guid: 89989cef5a69c50b096415fa738769e2, type: 3}
   potionSound: {fileID: 8300000, guid: 809201f9dcc051d88964a359192c7c9d, type: 3}
-  musicaSource: {fileID: 0}
+  musicaSource: {fileID: 919204845}
   efeitosSource: {fileID: 1244115614}
 --- !u!4 &1244115616
 Transform:
@@ -1823,8 +1778,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -237.7653, y: 89.251205}
-  m_SizeDelta: {x: 385.5305, y: 225.4693}
+  m_AnchoredPosition: {x: -298.82007, y: 110.199646}
+  m_SizeDelta: {x: 497.4237, y: 299.6958}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1336417991
 MonoBehaviour:
@@ -2058,8 +2013,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -241.25697, y: -204.50049}
-  m_SizeDelta: {x: 378.4007, y: 219.2285}
+  m_AnchoredPosition: {x: -303.32507, y: -280.25775}
+  m_SizeDelta: {x: 488.2249, y: 291.4004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1443243326
 MonoBehaviour:
@@ -2427,8 +2382,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8, y: 6}
-  m_SizeDelta: {x: 1497.6812, y: 846.0709}
+  m_AnchoredPosition: {x: -2.3695, y: -0.4587}
+  m_SizeDelta: {x: 1932.3562, y: 1124.605}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1878674516
 MonoBehaviour:
@@ -2842,6 +2797,5 @@ SceneRoots:
   - {fileID: 2028014044}
   - {fileID: 141286873}
   - {fileID: 1833539390}
-  - {fileID: 563955482}
   - {fileID: 1244115616}
   - {fileID: 1765069017}

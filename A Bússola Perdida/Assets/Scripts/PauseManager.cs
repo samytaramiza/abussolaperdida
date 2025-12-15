@@ -4,6 +4,10 @@ public class PauseManager : MonoBehaviour
 {
     public static PauseManager Instance; //Implementa o padrão Singleton (permite acesso global)
 
+    public GameObject imagePocao;
+    public GameObject imageRosa;
+    public GameObject barraDeVida;
+
     [Header("Painel de Configurações")]
     public GameObject panelConfig; //Referência ao painel de configurações (Canvas que aparece quando pausa)
 
@@ -67,6 +71,10 @@ public class PauseManager : MonoBehaviour
         //Se o jogador pressionar "P" ou "Esc"
         if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape))
         {
+            imagePocao.SetActive(false);
+            imageRosa.SetActive(false);
+            barraDeVida.SetActive(false);
+
             //Inverte o estado da pausa (toggle)
             isPause = !isPause;
 
