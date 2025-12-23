@@ -10,7 +10,6 @@ public class Player : MonoBehaviour
     public bool doubleJump;
 
     [Header("Ataque")]
-    public GameObject potionPrefab;
     public Transform attackPoint;
     public float attackCooldown = 0.5f;
 
@@ -23,7 +22,7 @@ public class Player : MonoBehaviour
     public float tempoEntreDano = 1f;
     private float danoTimer;
 
-    private bool facingRight = true; //controla direção do player
+    private bool facingRight = true; // controla direção do player
 
     void Start()
     {
@@ -46,12 +45,9 @@ public class Player : MonoBehaviour
     {
         float h = Input.GetAxis("Horizontal");
 
-        // mantém seu método de movimento
         transform.position += new Vector3(h, 0, 0) * Speed * Time.deltaTime;
-
         anim.SetBool("Walk", h != 0);
 
-        // FLIP seguro sem tocar Y/Z ou interferir no pulo
         if (h > 0 && !facingRight)
             Flip();
         else if (h < 0 && facingRight)
@@ -62,7 +58,7 @@ public class Player : MonoBehaviour
     {
         facingRight = !facingRight;
         Vector3 scale = transform.localScale;
-        scale.x *= -1; // só inverte X
+        scale.x *= -1;
         transform.localScale = scale;
     }
 
@@ -88,7 +84,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    // ---------------- ATAQUE ----------------
+    // ---------------- ATAQUE (OBJECT POOL) ----------------
     void Attack()
     {
         if (Input.GetKeyDown(KeyCode.X) && attackTimer >= attackCooldown)
@@ -98,9 +94,12 @@ public class Player : MonoBehaviour
 
             anim.SetTrigger("Attack");
 
-            GameObject potionObj = Instantiate(potionPrefab, attackPoint.position, Quaternion.identity);
-            PotionProjectile potion = potionObj.GetComponent<PotionProjectile>();
+            GameObject potionObj = PotionPool.Instance.GetPotion();
+            potionObj.transform.position = attackPoint.position;
+            potionObj.transform.rotation = Quaternion.identity;
+            potionObj.SetActive(true);
 
+            PotionProjectile potion = potionObj.GetComponent<PotionProjectile>();
             potion.direcao = facingRight ? 1 : -1;
 
             GameController.instance.UsarPocao();
@@ -111,7 +110,7 @@ public class Player : MonoBehaviour
     // ---------------- COLISÕES ----------------
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.layer == 8)
+        if (col.gameObject.layer == 8) // chão
         {
             isJumping = false;
             anim.SetBool("Jump", false);
@@ -127,6 +126,7 @@ public class Player : MonoBehaviour
             TomarDanoPerigo();
     }
 
+    // ---------------- DANO CONTÍNUO ----------------
     void TomarDanoPerigo()
     {
         if (danoTimer >= tempoEntreDano)

@@ -23,10 +23,6 @@ public class BossController : MonoBehaviour
     public Transform firePoint;
     public float attackCooldown = 1.5f;
 
-    [Header("Bullet Pool")]
-    public GameObject[] bossBullets;
-
-
     [Header("Attack Flash")]
     public Color attackFlashColor = Color.red;
     public int attackFlashCount = 3;
@@ -142,18 +138,9 @@ public class BossController : MonoBehaviour
 
         Vector2 dir = (player.position - firePoint.position).normalized;
 
-        foreach (GameObject bullet in bossBullets)
-        {
-            if (!bullet.activeInHierarchy)
-            {
-                bullet.transform.position = firePoint.position;
-                bullet.transform.right = dir;
-                bullet.SetActive(true);
-                break;
-            }
-        }
+        GameObject power = Instantiate(powerBoss, firePoint.position, Quaternion.identity);
+        power.transform.right = dir;
     }
-
 
     // ================= TELEPORTE =================
     IEnumerator Teleport()

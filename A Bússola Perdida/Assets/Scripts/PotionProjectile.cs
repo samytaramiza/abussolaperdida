@@ -6,6 +6,12 @@ public class PotionProjectile : MonoBehaviour
     public int direcao = 1;
     public float dano = 20f;
 
+    private void OnEnable()
+    {
+        // Reset opcional
+        direcao = 1;
+    }
+
     void Update()
     {
         transform.Translate(Vector2.right * direcao * speed * Time.deltaTime);
@@ -17,16 +23,14 @@ public class PotionProjectile : MonoBehaviour
         {
             BossHealth vidaBoss = collision.GetComponent<BossHealth>();
             if (vidaBoss != null)
-            {
                 vidaBoss.TomarDano(dano);
-            }
 
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
 
         if (collision.CompareTag("Parede"))
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }
