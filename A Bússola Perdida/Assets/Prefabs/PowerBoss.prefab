@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7514648781867627071}
   - component: {fileID: 5922179397072251288}
   - component: {fileID: 6909315797128643224}
+  - component: {fileID: 8006740743445561382}
   m_Layer: 0
   m_Name: PowerBoss
   m_TagString: Untagged
@@ -204,3 +205,17 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &8006740743445561382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4678709246319149785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41b6a19077c885ef999c0095f2a7a45c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossBullet
+  speed: 6
+  lifeTime: 3
